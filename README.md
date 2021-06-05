@@ -14,5 +14,6 @@ Differences:
 * MicroUSB
 * Snap-together backshell without screws
 
+PCB: https://oshpark.com/shared_projects/r3SkY0pc
 BOM: https://www.digikey.com/short/30bjf4nq
 
