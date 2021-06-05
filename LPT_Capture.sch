@@ -1,0 +1,423 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "LPT Capture"
+Date "2021-06-05"
+Rev "001"
+Comp "b.kenyon.w@gmail.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 000_LOCAL:FT245RL U1
+U 1 1 60BBC2F8
+P 5400 3600
+F 0 "U1" H 5400 4900 50  0000 C CNN
+F 1 "FT245RL" H 5190 3560 50  0001 L BNN
+F 2 "000_LOCAL:SSOP-28_5.3x10.2mm_P0.65mm" H 5250 3450 50  0001 L BNN
+F 3 "" H 5400 3600 50  0001 L BNN
+	1    5400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 000_LOCAL:USB_B_Micro J1
+U 1 1 60BBD088
+P 2000 3400
+F 0 "J1" H 2000 3840 50  0000 C CNN
+F 1 "USB_B_Micro" H 1990 3760 50  0000 C CNN
+F 2 "000_LOCAL:USB_Micro-B_GCT_USB3076-30-A" H 2150 3350 50  0001 C CNN
+F 3 "~" H 2150 3350 50  0001 C CNN
+	1    2000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 000_LOCAL:Connector_DB25_Male J2
+U 1 1 60BBDFE2
+P 9600 3600
+F 0 "J2" H 9800 3690 50  0000 L CNN
+F 1 "DB25 Male" H 9800 3600 50  0000 L CNN
+F 2 "000_LOCAL:DSUB-25_Male_EdgeMount_P2.77mm" H 9600 3600 50  0001 C CNN
+F 3 "" H 9600 3600 50  0001 C CNN
+	1    9600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 000_LOCAL:R_Small R1
+U 1 1 60BC26C0
+P 7100 4800
+F 0 "R1" V 7100 4800 50  0000 C CNN
+F 1 "4.7K" V 7060 4640 50  0000 C CNN
+F 2 "000_LOCAL:R_0805_2012Metric" H 7100 4800 50  0001 C CNN
+F 3 "~" H 7100 4800 50  0001 C CNN
+	1    7100 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L 000_LOCAL:R_Pack04 RN1
+U 1 1 60BC2D83
+P 6640 2800
+F 0 "RN1" V 6640 2800 50  0000 C CNN
+F 1 "100" V 6600 2630 50  0000 C CNN
+F 2 "000_LOCAL:R_Array_Convex_4x1206" V 6560 2800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6640 2800 50  0001 C CNN
+	1    6640 2800
+	0    1    -1   0   
+$EndComp
+NoConn ~ 9300 4700
+NoConn ~ 9300 4100
+NoConn ~ 9300 2500
+NoConn ~ 9300 2400
+$Comp
+L power:GND #PWR0101
+U 1 1 60CA8171
+P 9200 2600
+F 0 "#PWR0101" H 9200 2350 50  0001 C CNN
+F 1 "GND" V 9190 2460 50  0000 R CNN
+F 2 "" H 9200 2600 50  0001 C CNN
+F 3 "" H 9200 2600 50  0001 C CNN
+	1    9200 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 2600 9200 2600
+Wire Wire Line
+	9200 2600 9200 2700
+Wire Wire Line
+	9200 3900 9300 3900
+Wire Wire Line
+	9300 3700 9200 3700
+Connection ~ 9200 3700
+Wire Wire Line
+	9200 3700 9200 3900
+Wire Wire Line
+	9300 3500 9200 3500
+Connection ~ 9200 3500
+Wire Wire Line
+	9200 3500 9200 3700
+Wire Wire Line
+	9300 3300 9200 3300
+Connection ~ 9200 3300
+Wire Wire Line
+	9200 3300 9200 3500
+Wire Wire Line
+	9300 3100 9200 3100
+Connection ~ 9200 3100
+Wire Wire Line
+	9200 3100 9200 3300
+Wire Wire Line
+	9300 2900 9200 2900
+Connection ~ 9200 2900
+Wire Wire Line
+	9200 2900 9200 3100
+Wire Wire Line
+	9300 2700 9200 2700
+Connection ~ 9200 2700
+Wire Wire Line
+	9200 2700 9200 2900
+Connection ~ 9200 2600
+Wire Wire Line
+	9300 3000 9100 3000
+Wire Wire Line
+	9100 3000 9100 4800
+Wire Wire Line
+	9100 4800 9300 4800
+Connection ~ 9100 4800
+Wire Wire Line
+	9300 4300 9200 4300
+Wire Wire Line
+	9200 4300 9200 4500
+Wire Wire Line
+	9200 4500 9300 4500
+Wire Wire Line
+	8900 2800 9300 2800
+Wire Wire Line
+	6300 4200 6600 4200
+Wire Wire Line
+	6600 4200 6600 4800
+Wire Wire Line
+	7800 4600 7800 2700
+Wire Wire Line
+	7800 2700 6840 2700
+Wire Wire Line
+	6300 2800 6440 2800
+Wire Wire Line
+	7850 2800 7850 4400
+Wire Wire Line
+	6300 2900 6440 2900
+Wire Wire Line
+	7900 2900 7900 4200
+Wire Wire Line
+	6300 3000 6440 3000
+Wire Wire Line
+	7950 3000 7950 4000
+Wire Wire Line
+	6300 3100 6440 3100
+Wire Wire Line
+	8000 3100 8000 3800
+Wire Wire Line
+	6300 3200 6440 3200
+Wire Wire Line
+	8050 3200 8050 3600
+Wire Wire Line
+	6300 3300 6440 3300
+Wire Wire Line
+	8600 3300 8600 3400
+Wire Wire Line
+	6300 3400 6440 3400
+Wire Wire Line
+	8490 3400 8490 3200
+Wire Wire Line
+	5600 4900 5500 4900
+Connection ~ 5400 4900
+Wire Wire Line
+	5400 4900 5200 4900
+Connection ~ 5500 4900
+Wire Wire Line
+	5500 4900 5400 4900
+$Comp
+L power:GND #PWR0102
+U 1 1 60D74FBF
+P 5400 4900
+F 0 "#PWR0102" H 5400 4650 50  0001 C CNN
+F 1 "GND" H 5410 4710 50  0000 C CNN
+F 2 "" H 5400 4900 50  0001 C CNN
+F 3 "" H 5400 4900 50  0001 C CNN
+	1    5400 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4500 4500 4900
+Wire Wire Line
+	4500 4900 5200 4900
+Connection ~ 5200 4900
+NoConn ~ 6300 4600
+NoConn ~ 6300 3800
+$Comp
+L 000_LOCAL:C_Small C2
+U 1 1 60D81F24
+P 2900 2500
+F 0 "C2" H 2980 2530 50  0000 L CNN
+F 1 "4.7uF" H 2980 2460 50  0000 L CNN
+F 2 "000_LOCAL:C_0805_2012Metric" H 2900 2500 50  0001 C CNN
+F 3 "~" H 2900 2500 50  0001 C CNN
+	1    2900 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2700 4000 2700
+Wire Wire Line
+	4000 2700 4000 5200
+Wire Wire Line
+	4000 5200 6600 5200
+$Comp
+L 000_LOCAL:C_Small C1
+U 1 1 60D814A5
+P 3900 2700
+F 0 "C1" V 4070 2700 50  0000 C CNN
+F 1 "100nF" V 4000 2700 50  0000 C CNN
+F 2 "000_LOCAL:C_0805_2012Metric" H 3900 2700 50  0001 C CNN
+F 3 "~" H 3900 2700 50  0001 C CNN
+	1    3900 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60D92EF5
+P 3800 2700
+F 0 "#PWR0103" H 3800 2450 50  0001 C CNN
+F 1 "GND" V 3800 2550 50  0000 R CNN
+F 2 "" H 3800 2700 50  0001 C CNN
+F 3 "" H 3800 2700 50  0001 C CNN
+	1    3800 2700
+	0    1    1    0   
+$EndComp
+Connection ~ 4000 2700
+Wire Wire Line
+	5500 2400 5300 2400
+Wire Wire Line
+	5300 2400 2900 2400
+Connection ~ 5300 2400
+$Comp
+L power:GND #PWR0104
+U 1 1 60DAA1CA
+P 2900 2600
+F 0 "#PWR0104" H 2900 2350 50  0001 C CNN
+F 1 "GND" H 2940 2400 50  0000 C CNN
+F 2 "" H 2900 2600 50  0001 C CNN
+F 3 "" H 2900 2600 50  0001 C CNN
+	1    2900 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3200 2300 2400
+Wire Wire Line
+	1900 3800 2000 3800
+$Comp
+L power:GND #PWR0105
+U 1 1 60DB1976
+P 2000 3800
+F 0 "#PWR0105" H 2000 3550 50  0001 C CNN
+F 1 "GND" H 2010 3580 50  0000 C CNN
+F 2 "" H 2000 3800 50  0001 C CNN
+F 3 "" H 2000 3800 50  0001 C CNN
+	1    2000 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4500 3500
+NoConn ~ 4500 3800
+NoConn ~ 4500 4200
+Wire Wire Line
+	2300 2400 2900 2400
+Connection ~ 2900 2400
+Connection ~ 2000 3800
+NoConn ~ 2300 3600
+Wire Wire Line
+	2300 3400 3400 3400
+Wire Wire Line
+	3400 3400 3400 3200
+Wire Wire Line
+	3400 3200 4500 3200
+Wire Wire Line
+	2300 3500 3300 3500
+Wire Wire Line
+	3300 3500 3300 2900
+Wire Wire Line
+	3300 2900 4500 2900
+Wire Wire Line
+	6440 2700 6300 2700
+Wire Wire Line
+	6840 2800 7850 2800
+Wire Wire Line
+	6840 2900 7900 2900
+Wire Wire Line
+	6840 3000 7950 3000
+$Comp
+L 000_LOCAL:R_Pack04 RN2
+U 1 1 60E9D2B3
+P 6640 3200
+F 0 "RN2" V 6640 3200 50  0000 C CNN
+F 1 "100" V 6600 3020 50  0000 C CNN
+F 2 "000_LOCAL:R_Array_Convex_4x1206" V 6560 3200 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6640 3200 50  0001 C CNN
+	1    6640 3200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6840 3100 8000 3100
+Wire Wire Line
+	6840 3200 8050 3200
+Wire Wire Line
+	6840 3300 8600 3300
+Wire Wire Line
+	6840 3400 8490 3400
+Wire Wire Line
+	8490 3200 9300 3200
+Wire Wire Line
+	8600 3400 9300 3400
+Wire Wire Line
+	8050 3600 9300 3600
+Wire Wire Line
+	8000 3800 9300 3800
+Wire Wire Line
+	7900 4200 9300 4200
+Wire Wire Line
+	7850 4400 9300 4400
+Wire Wire Line
+	7800 4600 9300 4600
+$Comp
+L 000_LOCAL:R_Pack04 RN3
+U 1 1 60F04DD3
+P 7000 4300
+F 0 "RN3" V 7000 4300 50  0000 C CNN
+F 1 "100" V 6960 4120 50  0000 C CNN
+F 2 "000_LOCAL:R_Array_Convex_4x1206" V 6920 4300 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7000 4300 50  0001 C CNN
+	1    7000 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 4000 9300 4000
+Wire Wire Line
+	7200 4100 8900 4100
+Wire Wire Line
+	8900 4100 8900 2800
+Wire Wire Line
+	6300 4000 6700 4000
+Wire Wire Line
+	6700 4000 6700 4100
+Wire Wire Line
+	6700 4100 6800 4100
+Wire Wire Line
+	7300 4800 9100 4800
+Wire Wire Line
+	7200 4800 7300 4800
+Connection ~ 7300 4800
+Wire Wire Line
+	7000 4800 6600 4800
+Connection ~ 6600 4800
+Wire Wire Line
+	6600 4800 6600 5200
+Wire Wire Line
+	6300 4400 6700 4400
+Wire Wire Line
+	6800 4300 6700 4300
+Wire Wire Line
+	6700 4300 6700 4400
+Wire Wire Line
+	7200 4300 7300 4300
+Wire Wire Line
+	7300 4300 7300 4800
+NoConn ~ 6800 4200
+NoConn ~ 7200 4200
+NoConn ~ 6800 4400
+NoConn ~ 7200 4400
+Text Label 4500 2700 2    50   ~ 0
+3v3
+Text Label 2300 3400 0    50   ~ 0
+USB+
+Text Label 2300 3500 0    50   ~ 0
+USB-
+Text Label 2300 3200 0    50   ~ 0
+VBUS
+Text Label 6300 2700 0    50   ~ 0
+D0
+Text Label 6300 2800 0    50   ~ 0
+D1
+Text Label 6300 2900 0    50   ~ 0
+D2
+Text Label 6300 3000 0    50   ~ 0
+D3
+Text Label 6300 3100 0    50   ~ 0
+D4
+Text Label 6300 3200 0    50   ~ 0
+D5
+Text Label 6300 3300 0    50   ~ 0
+D6
+Text Label 6300 3400 0    50   ~ 0
+D7
+Text Label 6900 2700 0    50   ~ 0
+LD0
+Text Label 6900 2800 0    50   ~ 0
+LD1
+Text Label 6900 2900 0    50   ~ 0
+LD2
+Text Label 6900 3000 0    50   ~ 0
+LD3
+Text Label 6900 3100 0    50   ~ 0
+LD4
+Text Label 6900 3200 0    50   ~ 0
+LD5
+Text Label 6900 3300 0    50   ~ 0
+LD6
+Text Label 6900 3400 0    50   ~ 0
+LD7
+Text Label 6300 4000 0    50   ~ 0
+~TXE
+Text Label 6300 4400 0    50   ~ 0
+WR
+$EndSCHEMATC
