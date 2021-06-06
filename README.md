@@ -14,5 +14,5 @@ Differences:
 * MicroUSB-B instead of USB-B
 * Snap-together backshell instead of screws & nuts
 
-PCB: [OSHPark](https://oshpark.com/shared_projects/r3SkY0pc), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
+PCB: [OSHPark](https://oshpark.com/shared_projects/hHFcIwmw), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
 BOM: [DigiKey](https://www.digikey.com/short/30bjf4nq)
