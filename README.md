@@ -13,6 +13,7 @@ Differences:
 * 0805 passives instead of 0603
 * MicroUSB-B instead of USB-B
 * Snap-together backshell instead of screws & nuts
+* Tie Select high
 
-PCB: [OSHPark](https://oshpark.com/shared_projects/hHFcIwmw), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
+PCB: [OSHPark](https://oshpark.com/shared_projects/t86LTfYN), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
 BOM: [DigiKey](https://www.digikey.com/short/30bjf4nq)
