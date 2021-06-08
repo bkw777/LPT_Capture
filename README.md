@@ -15,5 +15,5 @@ Differences:
 * Snap-together backshell instead of screws & nuts
 * Tie Select high
 
-PCB: [OSHPark](https://oshpark.com/shared_projects/t86LTfYN), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
+PCB: [OSHPark](https://oshpark.com/shared_projects/zwF1BeWb), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
 BOM: [DigiKey](https://www.digikey.com/short/30bjf4nq)
