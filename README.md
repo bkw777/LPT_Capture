@@ -12,7 +12,8 @@ Differences:
 * 0805 passives instead of 0603
 * MicroUSB-B, inverted in a cut-out, centered in the backshell opening
 * Snap-together backshell instead of screws & nuts
-* Tie Select high 
+* Tie the Select line high
+* Use VBUS/VCC instead of 3V3OUT for pullups
 
 PCB: [OSHPark](https://oshpark.com/shared_projects/Gq6lJ6nK), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
 BOM: [DigiKey](https://www.digikey.com/short/nmbpnppv)
