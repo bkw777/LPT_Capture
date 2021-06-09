@@ -2,8 +2,7 @@
 
 ![](LPT_Capture.jpg)
 
-![](LPT_Capture_backshell.jpg)
-
+![](LPT_Capture.svg)
 
 This is a rendition of [LptCap](https://www-user.tu-chemnitz.de/~heha/basteln/PC/LptCap/index.en.htm)
 
@@ -11,9 +10,9 @@ Differences:
 * Source in KiCAD instead of Eagle
 * SSOP chip instead of QFN
 * 0805 passives instead of 0603
-* MicroUSB-B instead of USB-B
+* MicroUSB-B, inverted in a cut-out, centered in the backshell opening
 * Snap-together backshell instead of screws & nuts
-* Tie Select high
+* Tie Select high 
 
-PCB: [OSHPark](https://oshpark.com/shared_projects/zwF1BeWb), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
-BOM: [DigiKey](https://www.digikey.com/short/30bjf4nq)
+PCB: [OSHPark](https://oshpark.com/shared_projects/Gq6lJ6nK), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
+BOM: [DigiKey](https://www.digikey.com/short/nmbpnppv)
