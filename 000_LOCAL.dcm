@@ -6,6 +6,12 @@ K capacitor cap
 F ~
 $ENDCMP
 #
+$CMP Ferrite_Bead_Small
+D Ferrite bead, small symbol
+K L ferrite bead inductor filter
+F ~
+$ENDCMP
+#
 $CMP R_Pack04
 D 4 resistor network, parallel topology
 K R network parallel topology isolated
