@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "LPT Capture"
 Date "2021-06-16"
-Rev "004"
+Rev "005"
 Comp "b.kenyon.w@gmail.com"
 Comment1 ""
 Comment2 ""
