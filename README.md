@@ -17,7 +17,7 @@ Differences:
 * VBUC/VCC conditioning per FT245RL datasheet
 
 PCB: [OSHPark](https://oshpark.com/shared_projects/bZjnxq1J), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
-BOM: [DigiKey](https://www.digikey.com/short/mfjh2n32)
+BOM: [DigiKey](https://www.digikey.com/short/8dh4dc7b)
 
 The hole in the backshell is 11mm. Most cables with small oval heads will fit.  
 The BOM includes a cable which you can remove if you don't need it.  
