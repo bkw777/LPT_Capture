@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "LPT Capture"
 Date "2021-06-16"
-Rev "004"
+Rev "005"
 Comp "b.kenyon.w@gmail.com"
 Comment1 ""
 Comment2 ""
@@ -561,7 +561,7 @@ L 000_LOCAL:Ferrite_Bead_Small FB1
 U 1 1 60CAB513
 P 3000 5600
 F 0 "FB1" V 2840 5620 50  0000 C CNN
-F 1 "MI0805K400R-10" V 2740 5670 50  0000 C CNN
+F 1 "40 Ohm 1.5A" V 2740 5670 50  0000 C CNN
 F 2 "000_LOCAL:L_0805_2012Metric" V 2930 5600 50  0001 C CNN
 F 3 "~" H 3000 5600 50  0001 C CNN
 	1    3000 5600
