@@ -10,13 +10,14 @@ Differences:
 * Source in KiCAD instead of Eagle
 * SSOP chip instead of QFN
 * 0805 passives instead of 0603
-* MicroUSB, centered in the backshell opening
+* MicroUSB, in a cut-out
 * Snap-together backshell instead of screws & nuts
 * Tie the Select line high
 * Use VBUS/VCC instead of 3V3OUT for pullups
+* VBUC/VCC conditioning per FT245RL datasheet
 
-PCB: [OSHPark](https://oshpark.com/shared_projects/Gq6lJ6nK), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
-BOM: [DigiKey](https://www.digikey.com/short/njfqn2vd)
+PCB: [OSHPark](https://oshpark.com/shared_projects/bZjnxq1J), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
+BOM: [DigiKey](https://www.digikey.com/short/mfjh2n32)
 
 The hole in the backshell is 11mm. Most cables with small oval heads will fit.  
 The BOM includes a cable which you can remove if you don't need it.  
