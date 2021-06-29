@@ -16,8 +16,8 @@ Differences:
 * Use VBUS/VCC instead of 3V3OUT for pullups
 * VBUS & VCC conditioning per FT245RL datasheet
 
-PCB: [OSHPark](https://oshpark.com/shared_projects/eIHPp19a), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
-BOM: [DigiKey](https://www.digikey.com/short/8dh4dc7b)
+PCB: [OSHPark](https://oshpark.com/shared_projects/55M38fT9), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
+BOM: [DigiKey](https://www.digikey.com/short/33jw5t4p)
 
 The hole in the backshell is 11mm. Most cables with small oval heads will fit.  
 The BOM includes a cable which you can remove if you don't need it.  
