@@ -24,4 +24,10 @@ K R resistor
 F ~
 $ENDCMP
 #
+$CMP SolderJumper_2_Open
+D Solder Jumper, 2-pole, open
+K solder jumper SPST
+F ~
+$ENDCMP
+#
 #End Doc Library
