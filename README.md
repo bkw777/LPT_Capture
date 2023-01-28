@@ -18,9 +18,13 @@ Differences from the original LptCap:
 PCB: [OSHPark](https://oshpark.com/shared_projects/DqbtiuyI), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
 BOM: [DigiKey](https://www.digikey.com/short/wqdmr8p4)
 
-The hole in the backshell is 11mm. Most cables with oval heads will fit.  
-The BOM includes a cable which you can remove if you don't need it.  
-For another common example, a [Raspberry Pi cable](https://thepihut.com/collections/raspberry-pi-cables/products/raspberry-pi-micro-usb-cable) fits.
+The hole in the backshell is 11mm, and the mid-mount usb jack is centered in it, and most cables with oval heads fit.  
+The DigiKey BOM cart above includes a cable which you can remove if you don't need it.
+For example a [Raspberry Pi cable](https://thepihut.com/collections/raspberry-pi-cables/products/raspberry-pi-micro-usb-cable) fits.
+
+The DB25 is wired to plug directly into a host computer in place of a printer cable.
+
+The FTDI chip provides a virtual usb-serial comm port. Use any comm program like PuTTY or TeraTerm or minicom to etc to read the data. Baud rate doesn't matter.
 
 Example usage: https://github.com/bkw777/TPDD_stuff  
-(TRS-80 Model 100 has a floppy disk peripheral that uses the serial port, and is much larger than the available ram, and so this raw sector dumping utility has an option to read the entire disk and stream the output to the printer port. LPT_Capture plus any generic serial comm program like PuTTY or minicom can collect that output to a file as though it were a serial connection.)
+(In that example, TRS-80 Model 100 has only a single serial port, and there is a disk drive that uses the serial port, and there is a sector-dump utility that can read from the disk and write hex out the parallel port.)  
