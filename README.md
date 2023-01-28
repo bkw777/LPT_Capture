@@ -18,7 +18,8 @@ Differences from the original LptCap:
 PCB: [OSHPark](https://oshpark.com/shared_projects/DqbtiuyI), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
 BOM: [DigiKey](https://www.digikey.com/short/wqdmr8p4)
 
-The hole in the backshell is 11mm, and the special mid-mount usb jack is right in the center. Some cables possibly won't fit, but most do, especially ones with oval shaped plugs like the standard [Raspberry Pi cable](https://thepihut.com/collections/raspberry-pi-cables/products/raspberry-pi-micro-usb-cable).  
+The hole in the backshell is 11mm, and the special mid-mount usb jack is right in the center.  
+Some cables possibly won't fit, but most do, especially ones with oval shaped plugs like the standard [Raspberry Pi cable](https://thepihut.com/collections/raspberry-pi-cables/products/raspberry-pi-micro-usb-cable).  
 The DigiKey BOM cart above includes a cable which you can remove if you don't need it.
 
 The DB25 is wired to plug directly into a host computer in place of a printer cable.
