@@ -24,7 +24,7 @@ The DigiKey BOM cart above includes a cable which you can remove if you don't ne
 
 The DB25 is wired to plug directly into a host computer in place of a printer cable.
 
-The FTDI chip provides a virtual usb-serial comm port. Use any comm program like PuTTY or TeraTerm or minicom to etc to read the data. It doesn't matter what baud rate you select in the comm program.
+The FTDI chip provides a virtual usb-serial comm port. Use any comm program like PuTTY or TeraTerm or minicom etc to read the data. It doesn't matter what baud rate you select in the comm program.
 
 The chip can both send and receive, but this circuit is basic and only implements receiving. You can only read, not write.
 
