@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "LPT_Capture")
-		(date "2024-06-25")
-		(rev "012")
+		(date "2024-08-31")
+		(rev "014")
 		(company "b.kenyon.w@gmail.com")
 		(comment 1 "CC-BY-SA")
 		(comment 2 "github.com/bkw777/LPT_Capture")
@@ -1965,6 +1965,401 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+		)
+		(symbol "000_LOCAL:Housing"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "N"
+				(at 3.81 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Housing"
+				(at 3.81 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 1.27 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Housing"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "housing enclosure"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Enclosure* Housing*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Housing_0_1"
+				(rectangle
+					(start -5.08 -0.635)
+					(end -1.27 -1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -4.445 -3.175)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -1.905 -3.175)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.5212 -1.5748) (xy -4.4704 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.4196 -1.6764) (xy -4.064 -1.6764)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.4196 -1.2192) (xy -4.3688 -0.9652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.318 -1.3208) (xy -4.0132 -1.3208)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.2164 -0.9144) (xy -3.9116 -0.9144)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.9116 -1.6256) (xy -3.8608 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -1.2192) (xy -3.7592 -0.9652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.6068 -1.5748) (xy -3.556 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.5052 -1.6764) (xy -3.1496 -1.6764)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.5052 -1.2192) (xy -3.4544 -0.9652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.4036 -1.3208) (xy -3.0988 -1.3208)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.302 -0.9144) (xy -2.9972 -0.9144)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.9972 -1.6256) (xy -2.9464 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.8956 -1.2192) (xy -2.8448 -0.9652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.6924 -1.5748) (xy -2.6416 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.5908 -1.6764) (xy -2.2352 -1.6764)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.5908 -1.2192) (xy -2.54 -0.9652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.4892 -1.3208) (xy -2.1844 -1.3208)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.3876 -0.9144) (xy -2.0828 -0.9144)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.0828 -1.6256) (xy -2.032 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.9812 -1.2192) (xy -1.9304 -0.9652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0) (xy -0.635 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.715 0) (xy -0.635 0) (xy 3.175 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.715 0) (xy -5.715 -4.445) (xy -0.635 -4.445) (xy 3.175 -0.635) (xy 3.175 3.81) (xy -1.905 3.81)
+						(xy -5.715 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
 					)
 				)
 			)
@@ -4646,7 +5041,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC USB TO PARALLEL FIFO 28-SSOP"
+			(at 99.06 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FT245RL"
 			(at 99.06 104.14 0)
 			(effects
 				(font
@@ -4784,7 +5188,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "datasheets/ASS_4884_CO.pdf"
 			(at 218.44 91.44 0)
 			(effects
 				(font
@@ -4793,7 +5197,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CONN D-SUB PLUG 25POS SLDR CUP"
+			(at 218.44 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "A-DS 25 LL/Z"
 			(at 218.44 91.44 0)
 			(effects
 				(font
@@ -4931,7 +5344,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 47K OHM 5% 1/8W 0805"
+			(at 177.8 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0805JR-0747KL"
 			(at 177.8 116.84 0)
 			(effects
 				(font
@@ -4989,7 +5411,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+		(property "Datasheet" "datasheets/CATCAY.pdf"
 			(at 158.75 76.2 0)
 			(effects
 				(font
@@ -4998,8 +5420,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES ARRAY 4 RES 100 OHM 1206 convex"
 			(at 158.75 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CAY16-101J4LF"
+			(at 158.75 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5139,7 +5570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "datasheets/mh.pdf"
 			(at 67.31 163.83 0)
 			(effects
 				(font
@@ -5148,8 +5579,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "FERRITE BEAD 40 OHM 0805 1LN"
 			(at 67.31 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MH2029-400Y"
+			(at 67.31 163.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5206,7 +5646,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "datasheets/885012207039.pdf"
 			(at 57.15 166.37 0)
 			(effects
 				(font
@@ -5215,7 +5655,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 10000PF 16V X7R 0805"
+			(at 57.15 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "885012207039"
 			(at 57.15 166.37 0)
 			(effects
 				(font
@@ -5234,73 +5683,6 @@
 			(project "LPT_Capture"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "000_LOCAL:C_Small")
-		(at 88.9 166.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000060d3accc")
-		(property "Reference" "C3"
-			(at 92.71 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 92.71 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "000_LOCAL:C_0805"
-			(at 88.9 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 88.9 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bd2aa188-d414-445e-bbee-1db7b35f5baf")
-		)
-		(pin "2"
-			(uuid "091c83ac-f4e8-4579-8da1-aa3ac89ae6a0")
-		)
-		(instances
-			(project "LPT_Capture"
-				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
-					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -5340,7 +5722,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "datasheets/885012207045.pdf"
 			(at 77.47 83.82 0)
 			(effects
 				(font
@@ -5349,8 +5731,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0.1UF 16V X7R 0805"
 			(at 77.47 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "885012207045"
+			(at 77.47 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5409,7 +5800,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "datasheets/GRM21BR71C475KE51-01.pdf"
 			(at 76.2 166.37 0)
 			(effects
 				(font
@@ -5418,7 +5809,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 4.7UF 16V X7R 0805"
+			(at 76.2 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM21BR71C475KE51L"
 			(at 76.2 166.37 0)
 			(effects
 				(font
@@ -5544,7 +5944,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "datasheets/usb3155.pdf"
 			(at 46.99 93.98 0)
 			(effects
 				(font
@@ -5554,7 +5954,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "MICRO B SKT, HORIZONTAL MID SMT"
 			(at 46.99 93.98 0)
 			(effects
 				(font
@@ -5570,6 +5970,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "USB3155-30-A"
+			(at 46.99 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -5598,176 +6007,6 @@
 			(project "LPT_Capture"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "000_LOCAL:R_Pack04")
-		(at 158.75 93.98 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000060e9d2b3")
-		(property "Reference" "RA2"
-			(at 158.75 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 158.75 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "000_LOCAL:R_Array_Convex_4x0603"
-			(at 158.75 91.948 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 158.75 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 158.75 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d4b47d4e-0e5a-44fb-a638-a134beec47ef")
-		)
-		(pin "2"
-			(uuid "e5cd36c9-8716-4945-8269-964fd6e8edb6")
-		)
-		(pin "3"
-			(uuid "da53c680-a180-404e-9040-3f1d3f61ed65")
-		)
-		(pin "4"
-			(uuid "8bfda7a8-b988-4cfd-acae-cfe1f99ee4fd")
-		)
-		(pin "5"
-			(uuid "52814cea-0fef-420d-b3d4-98da478b6556")
-		)
-		(pin "6"
-			(uuid "fb43e01a-e2d7-4b30-ac70-bfa35ecb0cd7")
-		)
-		(pin "7"
-			(uuid "e5d58df9-9e37-4ad8-9bc0-f23bb028deb8")
-		)
-		(pin "8"
-			(uuid "14092def-66a2-4984-85a7-58bbadd2675c")
-		)
-		(instances
-			(project "LPT_Capture"
-				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
-					(reference "RA2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "000_LOCAL:R_Pack04")
-		(at 158.75 111.76 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000060f04dd3")
-		(property "Reference" "RA3"
-			(at 158.75 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 158.75 104.14 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "000_LOCAL:R_Array_Convex_4x0603"
-			(at 158.75 109.728 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 158.75 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 158.75 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "94629ad3-a648-4dc7-9a5e-9840e32d7640")
-		)
-		(pin "2"
-			(uuid "97916d5c-2896-46ed-870d-fc7e55625859")
-		)
-		(pin "3"
-			(uuid "57c31169-5f5e-45d9-b997-59e702c1254b")
-		)
-		(pin "4"
-			(uuid "3b3cb13a-cf30-4eee-a48f-625ef8c06d72")
-		)
-		(pin "5"
-			(uuid "949960ca-4fbe-4fbc-b1ca-0acd1584cbc3")
-		)
-		(pin "6"
-			(uuid "48a09a83-7d3a-4323-bebe-32b5d72f5c03")
-		)
-		(pin "7"
-			(uuid "bada2ed0-3c25-49f6-a3db-42f8b5ce3a93")
-		)
-		(pin "8"
-			(uuid "b320543e-122f-47e0-a47d-4ef846f6d8e5")
-		)
-		(instances
-			(project "LPT_Capture"
-				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
-					(reference "RA3")
 					(unit 1)
 				)
 			)
@@ -5833,6 +6072,100 @@
 			(project "LPT_Capture"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR0121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "000_LOCAL:R_Pack04")
+		(at 158.75 111.76 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26c2f50e-8f65-4215-be41-fa4237da622d")
+		(property "Reference" "RA3"
+			(at 158.75 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 158.75 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "000_LOCAL:R_Array_Convex_4x0603"
+			(at 158.75 109.728 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/CATCAY.pdf"
+			(at 158.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES ARRAY 4 RES 100 OHM 1206 convex"
+			(at 158.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CAY16-101J4LF"
+			(at 158.75 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0df335e-3430-484f-b5b1-cdbabcffbfb3")
+		)
+		(pin "2"
+			(uuid "b830b243-3b1e-4d12-b87e-8d9841336a47")
+		)
+		(pin "3"
+			(uuid "b05bc4e8-112b-41c4-a04b-f3c5122090cf")
+		)
+		(pin "4"
+			(uuid "ea8e2891-21e8-4ab8-b6c8-74f5a18d9a8e")
+		)
+		(pin "5"
+			(uuid "0ffb105a-a107-4dd0-9a7c-52ecc1c84562")
+		)
+		(pin "6"
+			(uuid "257854ab-ea69-493c-82dc-f4a5fc166b54")
+		)
+		(pin "7"
+			(uuid "6ba2a58a-31b9-44c3-89ff-eb72a0ed918e")
+		)
+		(pin "8"
+			(uuid "b6e77d39-1de5-4fa6-83d5-ae2b26af79e6")
+		)
+		(instances
+			(project "LPT_Capture"
+				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
+					(reference "RA3")
 					(unit 1)
 				)
 			)
@@ -6429,6 +6762,79 @@
 		)
 	)
 	(symbol
+		(lib_id "000_LOCAL:Housing")
+		(at 139.7 165.1 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1335c31-143a-475e-83ad-9c3e681ba91b")
+		(property "Reference" "N1"
+			(at 143.51 164.1474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DB25_backshell"
+			(at 143.51 166.6874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_LOCAL:db25_backshell"
+			(at 140.97 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/mhccovxx-sn-xx.pdf"
+			(at 140.97 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25 WAY D-SUB HOOD PLASTIC TOP EN"
+			(at 139.7 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MHCCOV-25-SN-LG"
+			(at 139.7 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
+					(reference "N1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 99.06 132.08 0)
 		(unit 1)
@@ -6489,6 +6895,100 @@
 			(project "LPT_Capture"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "000_LOCAL:R_Pack04")
+		(at 158.75 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd58e834-89ae-4d3a-8258-3cdd4d509baa")
+		(property "Reference" "RA2"
+			(at 158.75 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 158.75 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "000_LOCAL:R_Array_Convex_4x0603"
+			(at 158.75 91.948 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/CATCAY.pdf"
+			(at 158.75 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES ARRAY 4 RES 100 OHM 1206 convex"
+			(at 158.75 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CAY16-101J4LF"
+			(at 158.75 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94ef535e-59ca-4f2e-b3a8-84d0861bd0e3")
+		)
+		(pin "2"
+			(uuid "642103bf-ebad-4c83-b421-a8648cb73c31")
+		)
+		(pin "3"
+			(uuid "eb2ff0e3-30ad-468b-b188-c2482d97bacf")
+		)
+		(pin "4"
+			(uuid "8ada66bb-8b20-4735-b3e1-04bd50a3a708")
+		)
+		(pin "5"
+			(uuid "12616808-ba87-4c2c-8d6e-76a51b83b4af")
+		)
+		(pin "6"
+			(uuid "04fb656b-d650-4718-bde5-6e09d8e60882")
+		)
+		(pin "7"
+			(uuid "148139ff-ac4b-4f34-aa2c-710048bc721a")
+		)
+		(pin "8"
+			(uuid "ccb57f95-c536-4802-8521-f2f7314879d3")
+		)
+		(instances
+			(project "LPT_Capture"
+				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
+					(reference "RA2")
 					(unit 1)
 				)
 			)
@@ -6620,6 +7120,82 @@
 			(project "LPT_Capture"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR0112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "000_LOCAL:C_Small")
+		(at 88.9 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f85f8a1f-070c-45d7-ba68-a98bdcffbba3")
+		(property "Reference" "C3"
+			(at 93.218 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 94.488 167.132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "000_LOCAL:C_0805"
+			(at 88.9 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/885012207045.pdf"
+			(at 88.9 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 16V X7R 0805"
+			(at 88.9 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "885012207045"
+			(at 88.9 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c40e3f6f-2059-4991-bfa9-21c729744862")
+		)
+		(pin "2"
+			(uuid "1f55746a-c974-44d1-9648-e76e5eb112cd")
+		)
+		(instances
+			(project "LPT_Capture"
+				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
+					(reference "C3")
 					(unit 1)
 				)
 			)

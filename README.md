@@ -11,7 +11,7 @@ Capture the output from a parallel printer port.
 ![](PCB/out/LPT_Capture.svg)
 
 PCB: [OSHPark](https://oshpark.com/shared_projects/DqbtiuyI), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
-BOM: [DigiKey](https://www.digikey.com/short/wqdmr8p4)
+BOM: [DigiKey](https://www.digikey.com/short/p8p4nv40)
 
 The DigiKey cart includes a USB cable just for reference & completeness which you may want to remove.
 
