@@ -13,7 +13,12 @@ Capture the output from a parallel printer port.
 PCB: [OSHPark](https://oshpark.com/shared_projects/DqbtiuyI), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
 BOM: [DigiKey](https://www.digikey.com/short/p8p4nv40)
 
-The DigiKey cart includes a USB cable just for reference & completeness which you may want to remove.
+2025/11/30 The FT245RL chip used here is now EOL. Existing stock will be running out starting now.
+
+A standard 1.6mm thick pcb fits between the solder cups of the specific DB25M plug in the BOM.  
+If you need to use some other part, you may want to use 1.2mm thick pcb for a better fit.
+
+The DigiKey cart includes a USB cable that fits in the housing just for reference & completeness which you may want to remove.
 
 # Usage
 Plug the device directly into the parallel printer port on a vintage computer.  
