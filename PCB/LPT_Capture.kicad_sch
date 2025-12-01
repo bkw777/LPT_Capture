@@ -3679,6 +3679,17 @@
 		)
 		(uuid "4423d888-a986-4d36-888d-ab64fde351c7")
 	)
+	(text "956-025-010R031\n956-025-010R011\nMHCCOV-25-SN-LG\nMHCCOV-25-SN-BK\n"
+		(exclude_from_sim no)
+		(at 130.048 172.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "45c48e09-5f0d-4271-9ba6-6b7c1787e256")
+	)
 	(text "Computer sets low to request auto linefeed."
 		(exclude_from_sim no)
 		(at 222.504 120.396 0)
@@ -5157,7 +5168,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DB25 Male"
+		(property "Value" "DB25M"
 			(at 223.52 91.44 0)
 			(effects
 				(font
@@ -5381,7 +5392,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100r"
 			(at 158.75 68.58 90)
 			(effects
 				(font
@@ -5915,7 +5926,7 @@
 				)
 			)
 		)
-		(property "Value" "USB3155-XX-X_REVA"
+		(property "Value" "USB3155-30-A"
 			(at 40.64 81.28 0)
 			(effects
 				(font
@@ -5923,7 +5934,7 @@
 				)
 			)
 		)
-		(property "Footprint" "000_LOCAL:GCT_USB3155-XX-X_REVA"
+		(property "Footprint" "000_LOCAL:GCT_USB3155-XX-X"
 			(at 46.99 93.98 0)
 			(effects
 				(font
@@ -6083,7 +6094,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100r"
 			(at 158.75 104.14 90)
 			(effects
 				(font
@@ -6778,7 +6789,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "000_LOCAL:db25_backshell"
+		(property "Footprint" "000_LOCAL:DSUB-25_Housing"
 			(at 140.97 163.83 0)
 			(effects
 				(font
@@ -6906,7 +6917,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100r"
 			(at 158.75 86.36 90)
 			(effects
 				(font

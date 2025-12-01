@@ -1,10 +1,11 @@
-(footprint "GCT_USB3155-XX-X_REVA"
-	(version 20240108)
+(footprint "GCT_USB3155-XX-X"
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
+	(descr "micro-usb socket board edge mid-mount 2-tab tht")
 	(property "Reference" "REF**"
-		(at 0.01 -5.5 180)
+		(at 0 -5.6 180)
 		(layer "F.SilkS")
 		(uuid "e89efaf6-f3fa-4392-8df9-aa6657bfde23")
 		(effects
@@ -14,8 +15,8 @@
 			)
 		)
 	)
-	(property "Value" "GCT_USB3155-XX-X_REVA"
-		(at 6.72209 -11.89754 180)
+	(property "Value" "GCT_USB3155-XX-X"
+		(at 0 4 180)
 		(layer "F.Fab")
 		(uuid "136ab791-7c27-4a2d-8e66-68f48ae5269a")
 		(effects
@@ -25,23 +26,11 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "512edab7-90a6-419e-aeee-5b1550a7222d")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "5cbbdc4d-1e18-4607-85b2-d1f7145ce309")
+		(uuid "9d5c99de-acfe-48cc-a95a-ab0a2c492197")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "08ed95c2-2c07-4cc7-a636-2c3346c3386b")
+		(uuid "7d87b3cf-794f-42da-adcf-e026f83d9229")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -63,29 +52,19 @@
 	)
 	(attr through_hole)
 	(fp_circle
-		(center -2.1 -3.6)
-		(end -1.87 -3.6)
+		(center -1.93 -4.01)
+		(end -1.902 -4.01)
 		(stroke
-			(width 0.1)
+			(width 0.254)
 			(type solid)
 		)
-		(fill solid)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "5ff37e08-1119-463b-b937-bb8d6f9553ad")
 	)
 	(fp_line
-		(start -6 -4.25)
-		(end 6 -4.25)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "94e627ab-b89f-46e1-913d-baf120988ac2")
-	)
-	(fp_line
 		(start -6 3)
-		(end -6 -4.25)
+		(end -6 -1.7)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -104,8 +83,98 @@
 		(uuid "b80e4359-14e0-4dac-a9c0-65a6e59af851")
 	)
 	(fp_line
+		(start -4 -3.2)
+		(end -4 -1.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "e817ec46-69cc-4a8c-afb1-d3ce3a022547")
+	)
+	(fp_line
+		(start -4 -1.7)
+		(end -6 -1.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "8c9c1a29-a3f9-48d1-a48f-62582b33df48")
+	)
+	(fp_line
+		(start -1.7 -4.9)
+		(end -1.7 -3.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "9537910d-82ad-4579-90f1-f0e5592ed7d1")
+	)
+	(fp_line
+		(start -1.7 -3.2)
+		(end -4 -3.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "9eaed1c6-3542-40dc-8bec-329ae429c04b")
+	)
+	(fp_line
+		(start 1.7 -4.9)
+		(end -1.7 -4.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "d9481616-06f5-457c-b1bc-488d7a5920e1")
+	)
+	(fp_line
+		(start 1.7 -3.2)
+		(end 1.7 -4.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "951286e6-7113-4618-8a3b-6e174955ffda")
+	)
+	(fp_line
+		(start 4 -3.2)
+		(end 1.7 -3.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "c0cb17b4-80e1-4748-b0d1-242465faeb9b")
+	)
+	(fp_line
+		(start 4 -1.7)
+		(end 4 -3.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "8ae8d7f1-74cc-46da-ba24-87fea1c4dc36")
+	)
+	(fp_line
+		(start 6 -1.7)
+		(end 4 -1.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "91775e30-6c4a-405e-98e9-66f2595462d8")
+	)
+	(fp_line
 		(start 6 3)
-		(end 6 -4.25)
+		(end 6 -1.7)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -114,8 +183,8 @@
 		(uuid "69924c51-eadc-4ed2-a76f-f63500563024")
 	)
 	(fp_line
-		(start -5.7 1.52)
-		(end -3.8 1.52)
+		(start -5.7 2)
+		(end -3.8 2)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -164,7 +233,7 @@
 		(uuid "0f00b822-ee85-4e1c-96e8-5fc3108da90b")
 	)
 	(fp_line
-		(start -3.8 1.52)
+		(start -3.8 2)
 		(end -3.8 -3)
 		(stroke
 			(width 0.1)
@@ -194,7 +263,7 @@
 		(uuid "4dafb1a6-2060-4e78-8a62-031c4fba05d1")
 	)
 	(fp_line
-		(start 3.8 1.52)
+		(start 3.8 2)
 		(end 3.8 -3)
 		(stroke
 			(width 0.1)
@@ -204,8 +273,8 @@
 		(uuid "89c534f8-75fe-4b23-b5c3-09309885efca")
 	)
 	(fp_line
-		(start 3.8 1.52)
-		(end 5.7 1.52)
+		(start 3.8 2)
+		(end 5.7 2)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -224,7 +293,7 @@
 		(uuid "ea6824a7-e268-49e3-b945-be259d0082ee")
 	)
 	(fp_text user "PCB Edge"
-		(at -7.4 1.9 0)
+		(at 0 -2.3 0)
 		(layer "F.Fab")
 		(uuid "0d7f9c2a-7a5f-4130-a0c8-c8cb10d45608")
 		(effects
@@ -237,7 +306,7 @@
 	(pad "1" smd custom
 		(at -1.3 -3.75)
 		(size 0.42 1.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(options
 			(clearance outline)
 			(anchor rect)
@@ -255,7 +324,7 @@
 	(pad "2" smd custom
 		(at -0.65 -3.75)
 		(size 0.42 1.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(options
 			(clearance outline)
 			(anchor rect)
@@ -273,7 +342,7 @@
 	(pad "3" smd custom
 		(at 0 -3.75)
 		(size 0.42 1.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(options
 			(clearance outline)
 			(anchor rect)
@@ -291,7 +360,7 @@
 	(pad "4" smd custom
 		(at 0.65 -3.75)
 		(size 0.42 1.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(options
 			(clearance outline)
 			(anchor rect)
@@ -309,7 +378,7 @@
 	(pad "5" smd custom
 		(at 1.3 -3.75)
 		(size 0.42 1.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(options
 			(clearance outline)
 			(anchor rect)
@@ -340,6 +409,7 @@
 		(remove_unused_layers no)
 		(uuid "a1abf5a3-00ea-4b42-9012-5ab1733deb87")
 	)
+	(embedded_fonts no)
 	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/USB3155-30-A.stp"
 		(offset
 			(xyz 0 -2.15 0)

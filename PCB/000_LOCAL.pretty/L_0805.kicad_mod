@@ -1,7 +1,7 @@
 (footprint "L_0805"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Inductor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 80, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 	(tags "inductor")
@@ -29,18 +29,6 @@
 				(thickness 0.1)
 			)
 			(justify left)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "80d25f52-64d3-4476-a01c-14d832878b1a")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
 		)
 	)
 	(property "Datasheet" ""
@@ -182,18 +170,19 @@
 	(pad "1" smd roundrect
 		(at -1.0625 0)
 		(size 0.875 1.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "431540d3-69dc-4b0f-b1c1-66394ae70ec4")
 	)
 	(pad "2" smd roundrect
 		(at 1.0625 0)
 		(size 0.875 1.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "c6dcf855-bfc9-48a2-8df5-b1bea8d053fa")
 	)
-	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/L_0805_2012Metric.step"
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/L_0805.step"
 		(offset
 			(xyz 0 0 0)
 		)
