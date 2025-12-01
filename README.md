@@ -13,7 +13,8 @@ Capture the output from a parallel printer port.
 PCB: [OSHPark](https://oshpark.com/shared_projects/DqbtiuyI), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
 BOM: [DigiKey](https://www.digikey.com/short/p8p4nv40)
 
-2025/11/30 The FT245RL chip used here is now EOL. Existing stock will be running out starting now.
+2025/11/30 The FT245RL chip used here is now EOL.  
+[FT245RNL](https://www.digikey.com/en/products/detail/ftdi-future-technology-devices-international-ltd/FT245RNL-REEL/16836155) appears to be the current drop-in replacement (the entire datasheet is essentially identical).
 
 A standard 1.6mm thick pcb fits between the solder cups of the specific DB25M plug in the BOM.  
 If you need to use some other part, you may want to use 1.2mm thick pcb for a better fit.
