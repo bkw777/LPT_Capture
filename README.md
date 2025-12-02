@@ -10,7 +10,7 @@ Capture the output from a parallel printer port.
 ![](PCB/out/LPT_Capture.bottom.jpg)
 ![](PCB/out/LPT_Capture.svg)
 
-PCB: [OSHPark](https://oshpark.com/shared_projects/DqbtiuyI), [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
+PCB: [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
 BOM: [DigiKey](https://www.digikey.com/short/j7w00c9c)
 
 # Usage
