@@ -1,8 +1,8 @@
 # LPT Capture
 Capture the output from a parallel printer port.
 
-The `v2` branch adds the ONLINE, /SELIN, and /RESET signals - UNTESTED  
-The `usbc` branch is usb-c instead of microusb - UNTESTED
+The [v2](../../tree/v2) branch adds the ONLINE, /SELIN, and /RESET signals - UNTESTED  
+The [usbc](../../tree/usbc) branch is usb-c instead of microusb - UNTESTED
 
 ![](PCB/out/LPT_Capture.jpg)
 ![](LPT_Capture.1.jpg)
