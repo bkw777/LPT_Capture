@@ -1,6 +1,8 @@
 # LPT Capture
 Capture the output from a parallel printer port.
 
+-*- Untested USB-C version -*-
+
 ![](PCB/out/LPT_Capture.jpg)
 ![](LPT_Capture.1.jpg)
 ![](LPT_Capture.2.jpg)
@@ -10,8 +12,8 @@ Capture the output from a parallel printer port.
 ![](PCB/out/LPT_Capture.bottom.jpg)
 ![](PCB/out/LPT_Capture.svg)
 
-PCB: [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
-BOM: [DigiKey](https://www.digikey.com/short/j7w00c9c)
+<!-- PCB: [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  -->
+BOM: [PCB/out/LPT_Capture.bom.csv](PCB/out/LPT_Capture.bom.csv) <!-- [DigiKey](https://www.digikey.com/short/j7w00c9c) -->
 
 # Usage
 Plug the device directly into the parallel printer port on a vintage computer.  
@@ -32,7 +34,7 @@ Differences from the original LptCap:
 * Re-drawn in KiCad instead of Eagle
 * SSOP chip instead of QFN - easier to hand solder
 * 0805 passives instead of 0603 - easier to hand solder
-* microusb port instead of miniusb - cables are more common
+* USB-C port instead of Mini-USB
 * mid-mount usb port - positions the plug exactly centered in the cable opening
 * Snap-together backshell instead of screws & nuts
 * Pullups to VCC (5V) instead of 3V3OUT - LPT signals are 5V
