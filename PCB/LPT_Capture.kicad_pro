@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 0.45,
+          "width": 1.75
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -558,7 +558,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "out/${PROJECTNAME}.bom.csv",
+    "bom_export_filename": "out/${TITLE}.bom.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
