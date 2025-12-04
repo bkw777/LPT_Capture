@@ -254,8 +254,9 @@
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/956-025-010R0.STEP"
+		(opacity 0.1900)
 		(offset
-			(xyz 0 -9.9 -9.4)
+			(xyz 0 -9.9 -9.35)
 		)
 		(scale
 			(xyz 1 1 1)
@@ -266,7 +267,7 @@
 	)
 	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/956-025-010R0.STEP"
 		(offset
-			(xyz 0 -9.9 7.6)
+			(xyz 0 -9.9 7.65)
 		)
 		(scale
 			(xyz 1 1 1)

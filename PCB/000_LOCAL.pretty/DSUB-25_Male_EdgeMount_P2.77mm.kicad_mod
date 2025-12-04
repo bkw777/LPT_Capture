@@ -1289,7 +1289,7 @@
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/171-025-103.step"
 		(offset
-			(xyz -26.5 -6 -7)
+			(xyz -26.5 -6 -7.15)
 		)
 		(scale
 			(xyz 1 1 1)
