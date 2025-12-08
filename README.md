@@ -2,7 +2,9 @@
 Capture the output from a parallel printer port.
 
 The [v2](../../tree/v2) branch adds the ONLINE, /SELIN, and /RESET signals - UNTESTED  
+The [v2-leds](../../tree/v2-leds) branch adds LEDS for ONLINE & /SELIN - UNTESTED  
 The [usbc](../../tree/usbc) branch is usb-c instead of microusb - UNTESTED
+The [centronics](../../tree/centronics) branch has a Centronics 36 connector instead of DB25 - UNTESTED
 
 ![](PCB/out/LPT_Capture.jpg)
 ![](LPT_Capture.1.jpg)
