@@ -3728,7 +3728,7 @@
 	)
 	(text "(*) un-used pad used to route a pcb trace"
 		(exclude_from_sim no)
-		(at 181.61 152.4 0)
+		(at 178.562 163.322 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3802,9 +3802,9 @@
 		)
 		(uuid "b3d88506-c495-44a0-80e1-b3987b1d693a")
 	)
-	(text "DB25 Male\nDB25P064TXLF\nA-DS 25 LL/Z"
+	(text "DB25 Male solder-cups that fit 1.6mm PCB\nDB25P064TXLF\nA-DS 25 LL/Z  - loose\nDE25PNES  - tight, slide in from side\nL717SDB25P\n61802524823\n2101-0180-03\n\nNeed 1.2mm PCB\n171-025-103L001\nMHDB25SP\nDB25-PD\n40-9725M"
 		(exclude_from_sim no)
-		(at 211.074 130.81 0)
+		(at 197.358 128.778 0)
 		(effects
 			(font
 				(size 1.27 1.27)
