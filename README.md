@@ -25,12 +25,20 @@ Print to the LPT port on the vintage machine.
 
 Read the data from the COM port on the modern machine.
 
+This device essentially takes the place of a printer, and only only impliments the basic original Centronics interface, no ieee1284 epp ecp bi-directional etc.
+
 # Other Versions
-[v2](../../tree/v2) DB25, MicroUSB, Adds the ONLINE, /SELIN, and /RESET signals - UNTESTED  
-[v2-leds](../../tree/v2-leds) v2 plus leds for ONLINE & /SELECT - UNTESTED  
-[usbc](../../tree/usbc) DB25, USB-C, Minimum signals - UNTESTED  
-[db25_usbc](../../tree/db25_usbc) v2-leds with USB-C - UNTESTED  
-[centronics](../../tree/centronics) db25_usbc with Centronics 36 - UNTESTED
+The "fancy" versions add ONLINE, /SELIN, /RESET, and LEDS for ONLINE & /SELIN.  
+The c36 version has a Centronics 36F connector like a printer has, for use with computers that don't have an IBM PC style DB25 parallel printer port. Use the printer cable to connect the device to the computer.  
+The Centronics version tries to impliment all possible signals including possibly questionable ones like supplying 5v power on pins 18 & 35.  
+The main version is tested. None of these are tested yet.  
+<!--[v2](../../tree/v2) DB25, MicroUSB, Adds the ONLINE, /SELIN, and /RESET signals - UNTESTED  -->
+
+"db25_microusb_basic" <- the main branch is essentially this  
+[db25_microusb_fancy](../../tree/db25_microusb_fancy)  
+[db25_usbc_basic](../../tree/db25_usbc_basic)  
+[db25_usbc_fancy](../../tree/db25_usbc_fancy)  
+[c36_usbc_fancy](../../tree/c36_usbc_fancy) Centronics 36 connector
 
 # Credits
 [LptCap](https://www-user.tu-chemnitz.de/~heha/basteln/PC/LptCap/index.en.htm)
