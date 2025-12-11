@@ -29,7 +29,7 @@ Read the data from the COM port on the modern machine.
 [v2](../../tree/v2) DB25, MicroUSB, Adds the ONLINE, /SELIN, and /RESET signals - UNTESTED  
 [v2-leds](../../tree/v2-leds) v2 plus leds for ONLINE & /SELECT - UNTESTED  
 [usbc](../../tree/usbc) DB25, USB-C, Minimum signals - UNTESTED  
-[db25_usbc](../../tree/usbc) v2-leds with USB-C - UNTESTED  
+[db25_usbc](../../tree/db25_usbc) v2-leds with USB-C - UNTESTED  
 [centronics](../../tree/centronics) db25_usbc with Centronics 36 - UNTESTED
 
 # Credits
