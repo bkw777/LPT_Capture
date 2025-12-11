@@ -1,11 +1,6 @@
 # LPT Capture
 Capture the output from a parallel printer port.
 
-The [v2](../../tree/v2) branch adds the ONLINE, /SELIN, and /RESET signals - UNTESTED  
-The [v2-leds](../../tree/v2-leds) branch adds LEDS for ONLINE & /SELIN - UNTESTED  
-The [usbc](../../tree/usbc) branch is usb-c instead of microusb - UNTESTED  
-The [centronics](../../tree/centronics) branch has a Centronics 36 connector instead of DB25 - UNTESTED
-
 ![](PCB/out/LPT_Capture.jpg)
 ![](LPT_Capture.1.jpg)
 ![](LPT_Capture.2.jpg)
@@ -29,6 +24,13 @@ It doesn't matter what baud rate you select in the comm program.
 Print to the LPT port on the vintage machine.
 
 Read the data from the COM port on the modern machine.
+
+# Other Versions
+[v2](../../tree/v2) DB25, MicroUSB, Adds the ONLINE, /SELIN, and /RESET signals - UNTESTED  
+[v2-leds](../../tree/v2-leds) v2 plus leds for ONLINE & /SELECT - UNTESTED  
+[usbc](../../tree/usbc) DB25, USB-C, Minimum signals - UNTESTED  
+[db25_usbc](../../tree/usbc) v2-leds with USB-C - UNTESTED  
+[centronics](../../tree/centronics) db25_usbc with Centronics 36 - UNTESTED
 
 # Credits
 [LptCap](https://www-user.tu-chemnitz.de/~heha/basteln/PC/LptCap/index.en.htm)
