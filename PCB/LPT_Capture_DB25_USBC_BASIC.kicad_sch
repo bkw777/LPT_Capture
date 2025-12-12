@@ -8101,7 +8101,7 @@
 				)
 			)
 		)
-		(property "Footprint" "000_LOCAL:USBC_16pin_mid_mount"
+		(property "Footprint" "000_LOCAL:USBC_Receptacle_16pin_mid_mount"
 			(at 49.53 88.9 0)
 			(effects
 				(font
