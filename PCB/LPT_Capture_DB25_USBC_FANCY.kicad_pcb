@@ -8148,7 +8148,7 @@
 				(allow_two_segments yes)
 				(prefer_zone_connections yes)
 			)
-			(uuid "625f26a7-5b79-448a-863b-df0529bd9f5b")
+			(uuid "f8af6f00-500f-4d49-bd3b-02a06299b560")
 		)
 		(pad "S" thru_hole oval
 			(at 5.62 -4)
@@ -8170,7 +8170,7 @@
 				(allow_two_segments yes)
 				(prefer_zone_connections yes)
 			)
-			(uuid "625f26a7-5b79-448a-863b-df0529bd9f5b")
+			(uuid "788bff69-28ac-4969-b514-a33fe9963dd0")
 		)
 		(pad "S" thru_hole oval
 			(at 5.62 0)
@@ -8192,7 +8192,7 @@
 				(allow_two_segments yes)
 				(prefer_zone_connections yes)
 			)
-			(uuid "625f26a7-5b79-448a-863b-df0529bd9f5b")
+			(uuid "8933cb31-66f0-48f6-a051-a2c89d70bb06")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/000_LOCAL.pretty/3d/USB4520-03-0-A.step"
