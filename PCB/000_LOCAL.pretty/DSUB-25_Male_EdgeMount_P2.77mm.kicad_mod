@@ -1285,8 +1285,20 @@
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/171-025-103.step"
+		(hide yes)
 		(offset
 			(xyz -26.5 -6 -7.15)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/DB25P064TXLFc001.step"
+		(offset
+			(xyz 0 -5.5 -0.8)
 		)
 		(scale
 			(xyz 1 1 1)

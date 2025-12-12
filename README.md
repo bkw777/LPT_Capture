@@ -1,14 +1,14 @@
 # LPT Capture
 Capture the output from a parallel printer port.
 
-![](PCB/out/LPT_Capture.jpg)
+![](PCB/out/LPT_Capture_DB25_MicroUSB_BASIC.jpg)
 ![](LPT_Capture.1.jpg)
 ![](LPT_Capture.2.jpg)
 ![](LPT_Capture.3.jpg)
 ![](LPT_Capture.4.jpg)
-![](PCB/out/LPT_Capture.top.jpg)
-![](PCB/out/LPT_Capture.bottom.jpg)
-![](PCB/out/LPT_Capture.svg)
+![](PCB/out/LPT_Capture_DB25_MicroUSB_BASIC.top.jpg)
+![](PCB/out/LPT_Capture_DB25_MicroUSB_BASIC.bottom.jpg)
+![](PCB/out/LPT_Capture_DB25_MicroUSB_BASIC.svg)
 
 PCB: [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  
 BOM: [DigiKey](https://www.digikey.com/short/j7w00c9c)
@@ -28,13 +28,13 @@ Read the data from the COM port on the modern machine.
 This device essentially takes the place of a printer, and only only impliments the basic original Centronics interface, no ieee1284 epp ecp bi-directional etc.
 
 # Other Versions
-The default version above is tested.  
+The default "DB25 MicroUSB BASIC" version above is tested.  
 None of the rest of these are tested yet.
 
-[DB25 MicroUSB FANCY](../../tree/db25_microusb_fancy)  
+[DB25 MicroUSB FANCY](README_DB25_MicroUSB_FANCY.md)  
 [DB25 USBC BASIC](README_DB25_USBC_BASIC.md)  
 [DB25 USBC FANCY](../../tree/db25_usbc_fancy)  
-[Centronics USBC FANCY](../../tree/c36_usbc_fancy) Centronics 36 connector
+[Centronics USBC FANCY](../../tree/c36_usbc_fancy)
 
 # Credits
 [LptCap](https://www-user.tu-chemnitz.de/~heha/basteln/PC/LptCap/index.en.htm)
