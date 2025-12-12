@@ -33,7 +33,7 @@ None of the rest of these are tested yet.
 
 [DB25 MicroUSB FANCY](README_DB25_MicroUSB_FANCY.md)  
 [DB25 USBC BASIC](README_DB25_USBC_BASIC.md)  
-[DB25 USBC FANCY](../../tree/db25_usbc_fancy)  
+[DB25 USBC FANCY](README_DB25_USBC_FANCY.md)  
 [Centronics USBC FANCY](../../tree/c36_usbc_fancy)
 
 # Credits
