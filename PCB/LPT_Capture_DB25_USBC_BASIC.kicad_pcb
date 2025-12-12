@@ -395,7 +395,7 @@
 			)
 		)
 		(property "Value" "DB25P064TXLF"
-			(at 17.65 -8.851 0)
+			(at 17.65 -9.151 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "28d1913b-54bd-4ca4-8cbf-5304d346e8de")
@@ -1507,7 +1507,7 @@
 			(uuid "21279eb2-e92e-4570-9127-49ed26886f37")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 17.6 -7.601 0)
+			(at 17.55 -7.851 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "957c964b-c78a-441a-b366-224be19fb2f8")
@@ -6620,7 +6620,7 @@
 				(allow_two_segments yes)
 				(prefer_zone_connections yes)
 			)
-			(uuid "69f05e8e-b6b8-41d6-9940-00d6d92bf2f1")
+			(uuid "e79ba6b3-381f-4047-8cb7-9927df3a0e2f")
 		)
 		(pad "S" thru_hole oval
 			(at 5.62 -4)
@@ -6642,7 +6642,7 @@
 				(allow_two_segments yes)
 				(prefer_zone_connections yes)
 			)
-			(uuid "69f05e8e-b6b8-41d6-9940-00d6d92bf2f1")
+			(uuid "3006bb44-3a0d-40b0-a795-998de79b85fa")
 		)
 		(pad "S" thru_hole oval
 			(at 5.62 0)
@@ -6664,7 +6664,7 @@
 				(allow_two_segments yes)
 				(prefer_zone_connections yes)
 			)
-			(uuid "69f05e8e-b6b8-41d6-9940-00d6d92bf2f1")
+			(uuid "c9b8447d-e2f3-4700-9519-995f711c26ca")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/000_LOCAL.pretty/3d/USB4520-03-0-A.step"
