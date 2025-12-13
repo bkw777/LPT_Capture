@@ -32,9 +32,16 @@ The default "DB25 MicroUSB BASIC" version above is tested.
 None of the rest of these are tested yet.
 
 [DB25 MicroUSB FANCY](README_DB25_MicroUSB_FANCY.md)  
+[![](PCB/out/LPT_Capture_DB25_MicroUSB_FANCY.jpg)](README_DB25_MicroUSB_FANCY.md)
+
 [DB25 USBC BASIC](README_DB25_USBC_BASIC.md)  
+[![](PCB/out/LPT_Capture_DB25_USBC_BASIC.jpg)](README_DB25_USBC_BASIC.md)
+
 [DB25 USBC FANCY](README_DB25_USBC_FANCY.md)  
+[![](PCB/out/LPT_Capture_DB25_USBC_FANCY.jpg)](README_DB25_USBC_FANCY.md)
+
 [CN36 USBC FANCY](README_CN36_USBC_FANCY.md)
+[![](PCB/out/LPT_Capture_CN36_USBC_FANCY.jpg)](README_CN36_USBC_FANCY.md)
 
 # Credits
 [LptCap](https://www-user.tu-chemnitz.de/~heha/basteln/PC/LptCap/index.en.htm)
