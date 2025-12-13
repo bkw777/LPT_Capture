@@ -5,8 +5,8 @@
 	(uuid "688d8faa-d7c3-41d3-96f9-1bbd0c4002a8")
 	(paper "A4")
 	(title_block
-		(title "LPT_Capture_C36_USBC")
-		(date "2025-12-12")
+		(title "LPT_Capture_CN36_USBC")
+		(date "2025-12-13")
 		(rev "001")
 		(company "b.kenyon.w@gmail.com")
 		(comment 1 "CC-BY-SA")

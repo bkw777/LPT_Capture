@@ -13,14 +13,14 @@ Examples: TRS-80 Model I, Model 100
 
 todo: printable encosure
 
-![](PCB/out/LPT_Capture_Centronics_USBC_FANCY.jpg)
-![](PCB/out/LPT_Capture_Centronics_USBC_FANCY.2.jpg)
-![](PCB/out/LPT_Capture_Centronics_USBC_FANCY.top.jpg)
-![](PCB/out/LPT_Capture_Centronics_USBC_FANCY.bottom.jpg)
-![](PCB/out/LPT_Capture_Centronics_USBC_FANCY.svg)
+![](PCB/out/LPT_Capture_CN36_USBC_FANCY.jpg)
+![](PCB/out/LPT_Capture_CN36_USBC_FANCY.2.jpg)
+![](PCB/out/LPT_Capture_CN36_USBC_FANCY.top.jpg)
+![](PCB/out/LPT_Capture_CN36_USBC_FANCY.bottom.jpg)
+![](PCB/out/LPT_Capture_CN36_USBC_FANCY.svg)
 
 <!-- PCB: [PCBWAY](https://www.pcbway.com/project/shareproject/LPT_Capture.html)  --> 
-BOM: [bom.csv](PCB/out/LPT_Capture_Centronics_USBC_FANCY.bom.csv) <!-- [DigiKey](https://www.digikey.com/short/j7w00c9c) -->
+BOM: [bom.csv](PCB/out/LPT_Capture_CN36_USBC_FANCY.bom.csv) <!-- [DigiKey](https://www.digikey.com/short/j7w00c9c) -->
 
 
 # Credits

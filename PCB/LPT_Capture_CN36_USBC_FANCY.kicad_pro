@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 1.15,
-          "width": 0.6
+          "drill": 3.0,
+          "height": 6.0,
+          "width": 6.0
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -511,7 +511,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LPT_Capture_Centronics_USBC_FANCY.kicad_pro",
+    "filename": "LPT_Capture_CN36_USBC_FANCY.kicad_pro",
     "version": 3
   },
   "net_settings": {

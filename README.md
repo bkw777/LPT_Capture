@@ -34,7 +34,7 @@ None of the rest of these are tested yet.
 [DB25 MicroUSB FANCY](README_DB25_MicroUSB_FANCY.md)  
 [DB25 USBC BASIC](README_DB25_USBC_BASIC.md)  
 [DB25 USBC FANCY](README_DB25_USBC_FANCY.md)  
-[Centronics USBC FANCY](README_Centronics_USBC_FANCY.md)
+[CN36 USBC FANCY](README_CN36_USBC_FANCY.md)
 
 # Credits
 [LptCap](https://www-user.tu-chemnitz.de/~heha/basteln/PC/LptCap/index.en.htm)
