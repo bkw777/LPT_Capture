@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.1,
-          "width": 0.6
+          "height": 0.4,
+          "width": 1.2
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -109,6 +109,10 @@
           ""
         ],
         [
+          "copper_edge_clearance|147600000|105850000|223c9316-ec38-4567-bad0-1be3f1a47eb8|07abf612-7bfb-4d0b-a7a1-c79b3eaac872",
+          ""
+        ],
+        [
           "copper_edge_clearance|147730000|90750000|00000000-0000-0000-0000-000060bbe6d3|b0a0ac55-e753-40aa-9b4a-ebe5e7db6a1a",
           ""
         ],
@@ -158,6 +162,10 @@
         ],
         [
           "copper_edge_clearance|152250000|106250000|223c9316-ec38-4567-bad0-1be3f1a47eb8|82b1febc-ed9e-4bcc-bebc-36ec394693e3",
+          ""
+        ],
+        [
+          "copper_edge_clearance|152400000|105850000|223c9316-ec38-4567-bad0-1be3f1a47eb8|54f62376-cced-4cc0-8ca5-133e35819406",
           ""
         ],
         [
@@ -214,6 +222,10 @@
         ],
         [
           "footprint_type_mismatch|150000000|90150000|00000000-0000-0000-0000-000060bbe3fb|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "text_height|145150000|99150000|d721c408-7f99-4b93-a121-00f6b5ce57fb|00000000-0000-0000-0000-000000000000",
           ""
         ]
       ],

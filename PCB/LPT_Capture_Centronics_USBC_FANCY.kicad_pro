@@ -61,23 +61,27 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|122855000|105050000|42cb4c45-117b-45ef-bbd3-c48faa364b29|3ecfd383-1ead-4ab9-92ad-9ea5c21296ac",
+          "footprint_type_mismatch|118525000|102000000|67a76f37-6d84-4be6-b43b-b6d22f6c2c56|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "hole_clearance|122855000|105050000|42cb4c45-117b-45ef-bbd3-c48faa364b29|ddd08298-6985-49d7-8dd1-e3e43b757e8b",
+          "hole_clearance|122855000|105050000|d8c8e96b-e0b6-4cce-902e-03191141cc9c|d9089633-9fe0-408c-b4ff-dffe285bd0ca",
           ""
         ],
         [
-          "hole_clearance|122855000|98950000|e36c1b6d-77be-4304-8979-8c88a706a1cc|cb17f6b4-d663-4282-a3d4-180442acb481",
+          "hole_clearance|122855000|98950000|b55d16ef-8d19-4a6c-b4c2-680949cf84ba|7621d0af-291c-4999-9040-e66256e1584e",
           ""
         ],
         [
-          "hole_clearance|122855000|98950000|e36c1b6d-77be-4304-8979-8c88a706a1cc|cef13909-6fab-4e63-8320-107159b19984",
+          "silk_edge_clearance|116000000|106470000|00000000-0000-0000-0000-000060bbe5cb|e3271613-9945-4b24-8151-58fbcfecb4a4",
           ""
         ],
         [
-          "silk_overlap|136449960|104600039|89b6cecc-b8c5-41a4-958b-519b4d267fe8|f3b74e32-0afa-4776-a3f2-f6c74d411f87",
+          "silk_edge_clearance|116000000|97530000|00000000-0000-0000-0000-000060bbe5cb|544a98b6-b402-4898-b67f-ff4dd4a1f06c",
+          ""
+        ],
+        [
+          "silk_edge_clearance|116100000|79300000|00000000-0000-0000-0000-000060bbe6d3|ed8ad791-2ad6-4d82-badd-a1c8455c98b2",
           ""
         ]
       ],

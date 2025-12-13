@@ -6461,7 +6461,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "000_LOCAL:SSOP-28_5.3x10.2mm_P0.65mm"
+		(property "Footprint" "000_LOCAL:SSOP-28"
 			(at 104.14 95.25 0)
 			(effects
 				(font
