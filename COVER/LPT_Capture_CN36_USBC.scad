@@ -6,13 +6,15 @@ pcb_y = 31.7;
 pcb_cr = 3;
 
 wall_thickness = 1;
-post_height = 3;
-post_diameter = 8;
 post_hole_diameter = 3.2;
+screw_head_diameter = post_hole_diameter *2;
+post_diameter = screw_head_diameter + wall_thickness*2;
+
 post_x = 29.87;
 post_y = 5.15;
 
-base_thickness = 3;
+gap = 2; // this also becomes the screw head pocket depth, so it needs to be enough to recess the screw head even if it's more than needed for the trimmed connector legs
+base_thickness = gap + wall_thickness;
 
 // arc smoothness
 //$fn = 32;
@@ -37,35 +39,39 @@ module pcb_outline (x=pcb_x,y=pcb_y,z=base_thickness,r=pcb_cr) {
   }
 }
 
-module basic () {
-  translate([0,0,-base_thickness/2]) difference() {
-
-  pcb_outline();
-
-  union() {
-    mirror_copy([1,0,0]) translate([post_x,post_y,0]) {
-      // screw holes
-      cylinder(h=base_thickness+1,d=post_hole_diameter,center=true);
-      // screw head pockets
-      translate([0,0,-wall_thickness])
-      cylinder(h=base_thickness,d=post_hole_diameter*2,center=true);
-    }
-
-    // pin legs pocket
-    translate([0,post_y,wall_thickness])
-    cube([40,7,base_thickness],center=true);
-
+module screw_holes () {
+  mirror_copy([1,0,0]) translate([post_x,post_y,-base_thickness/2]) {
+    // screw holes
+    cylinder(h=base_thickness+1,d=post_hole_diameter,center=true);
+    // screw head pockets
+    translate([0,0,-wall_thickness])
+      cylinder(h=base_thickness,d=screw_head_diameter,center=true);
   }
+}
 
+module basic () {
+  difference() {
+    translate([0,0,-base_thickness/2]) pcb_outline();
+
+    union() {
+      screw_holes();
+      // pin legs pocket
+      translate([0,post_y,-base_thickness/2+wall_thickness])
+      cube([40,7,base_thickness],center=true);
+    }
 
   }
 }
 
 // incomplete, just the bottom tray yet
 module fancy () {
-  gap = 1;
+  //gap = 1;
   lip = 1;
   th = wall_thickness + gap + pcb_thickness;
+
+  difference() {
+  union(){
+  // main tray
   difference(){
     union(){
       // main
@@ -78,7 +84,7 @@ module fancy () {
       translate([0,0,th/2])
       pcb_outline(x=pcb_x+fc*2,y=pcb_y+fc*2,z=th,r=pcb_cr+fc);
       // gap cavity
-      translate([0,0,wall_thickness])
+      translate([0,0,th/2-gap])
       pcb_outline(x=pcb_x-lip*2,y=pcb_y-lip*2,z=th,r=pcb_cr-wall_thickness);
       // usb
       uh = 3.5;
@@ -88,12 +94,25 @@ module fancy () {
       hull() mirror_copy([1,0,0])
       translate([uw/2-uh/2,0,0])
       cylinder(h=wall_thickness+1,d=uh+upad*2);
-    }
+
+    }    
+  }
+
+  // add screw posts
+  h = gap; // gap+wall_thickness/2;
+  mirror_copy([1,0,0]) translate([post_x,post_y,-h]){
+    cylinder(d=post_diameter,h=h);
+    translate([0,-post_diameter/2,0]) cube([post_diameter/2,post_diameter,h]);
+  }
 
   }
+
+  translate([0,0,0]) screw_holes();
+  }
+  
 }
 
 pcb();
 
-basic();
-//fancy();
+//basic();
+fancy();
