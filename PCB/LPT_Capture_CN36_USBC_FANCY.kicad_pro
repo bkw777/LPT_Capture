@@ -577,7 +577,7 @@
       "plot": "GERBER_${TITLE}_${REVISION}",
       "pos_files": "GERBER_${TITLE}_${REVISION}",
       "specctra_dsn": "",
-      "step": "out/LPT_Capture.step",
+      "step": "out/${TITLE}.stl",
       "svg": "",
       "vrml": ""
     },
