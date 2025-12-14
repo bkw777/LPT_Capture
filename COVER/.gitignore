@@ -1,0 +1,10 @@
+# !@#$%^& python3/freecad
+# None of the supposed methods to prevent pycache actually work.
+# Probably because FreeCAD is now a %^$#@! flatpak or appimage that ships with it's own python
+__pycache__/
+
+*.step
+*.gcode
+*.3mf
+*.FCBak
+out/
