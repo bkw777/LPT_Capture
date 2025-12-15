@@ -30,12 +30,12 @@ module pcb () {
   %import("lib/LPT_Capture_CN36_USBC_FANCY.pcb.stl");
 }
 
-module pcb_outline (x=pcb_x,y=pcb_y,z=base_thickness,r=pcb_cr) {
+module pcb_outline (x=pcb_x,y=pcb_y,z=base_thickness,R=pcb_cr,r=0) {
   hull() {
-    translate([0,y/2-1,0])
-      cube([x,2,z],center=true);
-    mirror_copy([1,0,0]) translate([x/2-r,-y/2+r,0])
-      cylinder(h=z,r=r,center=true);
+    if (r) mirror_copy([1,0,0]) translate([x/2-r,y/2-r,0]) cylinder(h=z,r=r,center=true);
+    else translate([0,y/2-1,0]) cube([x,2,z],center=true);
+    mirror_copy([1,0,0]) translate([x/2-R,-y/2+R,0])
+      cylinder(h=z,r=R,center=true);
   }
 }
 
@@ -49,7 +49,7 @@ module screw_holes () {
   }
 }
 
-module basic () {
+module plate () {
   difference() {
     translate([0,0,-base_thickness/2]) pcb_outline();
 
@@ -64,7 +64,7 @@ module basic () {
 }
 
 // incomplete, just the bottom tray yet
-module fancy () {
+module tray () {
   //gap = 1;
   lip = 1;
   th = wall_thickness + gap + pcb_thickness;
@@ -76,16 +76,16 @@ module fancy () {
     union(){
       // main
       translate([0,0,-th/2+pcb_thickness])
-        pcb_outline(x=pcb_x+wall_thickness*2+fc*2,y=pcb_y+wall_thickness*2+fc*2,z=th,r=pcb_cr+wall_thickness+fc);
+        pcb_outline(x=pcb_x+wall_thickness*2+fc*2,y=pcb_y+wall_thickness*2+fc*2,z=th,R=pcb_cr+wall_thickness+fc,r=wall_thickness);
     }
 
     union(){
       // pcb tray
       translate([0,0,th/2])
-      pcb_outline(x=pcb_x+fc*2,y=pcb_y+fc*2,z=th,r=pcb_cr+fc);
+      pcb_outline(x=pcb_x+fc*2,y=pcb_y+fc*2,z=th,R=pcb_cr+fc);
       // gap cavity
       translate([0,0,th/2-gap])
-      pcb_outline(x=pcb_x-lip*2,y=pcb_y-lip*2,z=th,r=pcb_cr-wall_thickness);
+      pcb_outline(x=pcb_x-lip*2,y=pcb_y-lip*2,z=th,R=pcb_cr-wall_thickness);
       // usb
       uh = 3.5;
       uw = 9.3;
@@ -112,7 +112,11 @@ module fancy () {
   
 }
 
+module cover () {
+}
+
 pcb();
 
-//basic();
-fancy();
+//plate();
+tray();
+//cover();
