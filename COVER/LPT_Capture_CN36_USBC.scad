@@ -6,11 +6,11 @@ pcb_y = 31.7;
 pcb_cr = 3;
 
 wall_thickness = 1;
-post_hole_diameter = 3.2;
+post_hole_diameter = 3.2; // #4-40 screw, 0.125" hole
 screw_head_diameter = post_hole_diameter *2;
 post_diameter = screw_head_diameter + wall_thickness*2;
 
-post_x = 29.87;
+post_x = 29.87; // 2.352" between posts
 post_y = 5.15;
 
 gap = 2; // this also becomes the screw head pocket depth, so it needs to be enough to recess the screw head even if it's more than needed for the trimmed connector legs

@@ -665,18 +665,20 @@
 	)
 	(pad "S" thru_hole circle
 		(at -29.87 0)
-		(size 4 4)
+		(size 6 6)
 		(drill 3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(zone_connect 2)
 		(uuid "e0fd7f45-1eb1-44e4-b54f-388edfd044e5")
 	)
 	(pad "S" thru_hole circle
 		(at 29.87 0)
-		(size 4 4)
+		(size 6 6)
 		(drill 3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(zone_connect 2)
 		(uuid "7273d5bb-bc93-4875-8c60-f2e16f5f61e8")
 	)
 	(embedded_fonts no)
@@ -689,6 +691,30 @@
 		)
 		(rotate
 			(xyz -180 -0 -0)
+		)
+	)
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/1734044-1.step"
+		(hide yes)
+		(offset
+			(xyz 0 -20.35 7.6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/5552742-1.step"
+		(hide yes)
+		(offset
+			(xyz 0 -11.3 8.12)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
 		)
 	)
 )
