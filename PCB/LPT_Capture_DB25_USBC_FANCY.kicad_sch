@@ -9485,7 +9485,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "datasheets/io_usb_2_0_type_c_lite.pdf"
 			(at 50.8 76.2 0)
 			(effects
 				(font

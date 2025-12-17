@@ -10,11 +10,16 @@ post_hole_diameter = 3.2; // #4-40 screw, 0.125" hole
 screw_head_diameter = post_hole_diameter *2;
 post_diameter = screw_head_diameter + wall_thickness*2;
 
-post_x = 29.87; // 2.352" between posts
-post_y = 5.15;
+post_x = 59.74 / 2; // 59.74 between posts
+post_y = pcb_y/2 - 10.7; // 10.7 from pcb edge
 
-gap = 2; // this also becomes the screw head pocket depth, so it needs to be enough to recess the screw head even if it's more than needed for the trimmed connector legs
+gap = 2.1; // 4-40 pan head thickness 0.08" = 2.032mm this also becomes the screw head pocket depth, so it needs to be enough to recess the screw head even if it's more than needed for the trimmed connector legs
 base_thickness = gap + wall_thickness;
+
+usb_h = 7;
+usb_w = 13;
+usb_y = -6.85;
+usb_z = 1.75;
 
 // arc smoothness
 //$fn = 32;
@@ -87,13 +92,10 @@ module tray () {
       translate([0,0,th/2-gap])
       pcb_outline(x=pcb_x-lip*2,y=pcb_y-lip*2,z=th,R=pcb_cr-wall_thickness);
       // usb
-      uh = 3.5;
-      uw = 9.3;
-      upad = 3;
-      translate([-pcb_x/2+0.01,-6.85,pcb_thickness+uh/2]) rotate([90,0,-90])
+      translate([-pcb_x/2,usb_y,pcb_thickness+usb_z]) rotate([90,0,-90])
       hull() mirror_copy([1,0,0])
-      translate([uw/2-uh/2,0,0])
-      cylinder(h=wall_thickness+1,d=uh+upad*2);
+      translate([usb_w/2-usb_h/2,0,0])
+      cylinder(h=wall_thickness+fc*2,d=usb_h);
 
     }    
   }
