@@ -1,6 +1,12 @@
 // Enclosure for LPT_Capture CN36_USBC_FANCY
+//
+// requires 2  #4-40 x 1/4" pan head screws
+// https://www.digikey.com/en/products/detail/keystone-electronics/9900/317321
+// https://www.homedepot.com/p/Everbilt-4-40-x-3-8-in-Phillips-Slotted-Round-Head-Machine-Screws-10-Pack-831431/317478830
+//
+// Use the customizer pane.
 
-MODEL = "SHELL"; // [PLATE,TRAY,SHELL]
+STYLE = "SHELL"; // [PLATE,TRAY,SHELL]
 
 pcb_thickness = 1.6;
 pcb_x = 68;
@@ -8,14 +14,15 @@ pcb_y = 31.7;
 pcb_r = 3; // corner radius
 
 wall_thickness = 1;
-post_hole_diameter = 3.2; // #4-40 screw, 0.125" hole
-screw_head_diameter = post_hole_diameter *2;
-post_diameter = screw_head_diameter + wall_thickness*2;
+post_id = 3.2; // #4-40 screw, 0.125" hole
+screw_head_od = post_id*2;
+post_od = screw_head_od + wall_thickness*2;
+screw_head_thickness = 2.1; // #4-40 pan head, 0.08" 2.032mm
 
 post_x = 59.74 / 2; // 59.74 between posts
 post_y = pcb_y/2 - 10.7; // 10.7 from pcb edge
 
-gap = 2.1; // 4-40 pan head thickness 0.08" = 2.032mm this also becomes the screw head pocket depth, so it needs to be enough to recess the screw head even if it's more than needed for the trimmed connector legs
+gap = screw_head_thickness; // space between bottom of pcb and top of bottom wall
 base_thickness = gap + wall_thickness;
 
 usb_h = 7;
@@ -24,14 +31,14 @@ usb_y = -6.85;
 usb_z = 1.75;
 
 lip = 1;
+fc = 0.1;
+
+/* [Hidden] */
 
 // arc smoothness
 //$fn = 32;
 $fa = 6;
 $fs = 0.1;
-
-fc = 0.1;
-e = 0.002;
 
 include <lib/handy.scad>;
 
@@ -51,10 +58,10 @@ module pcb_outline (x=pcb_x,y=pcb_y,z=base_thickness,R=pcb_r,r=0) {
 module screw_holes () {
   mirror_copy([1,0,0]) translate([post_x,post_y,-base_thickness/2]) {
     // screw holes
-    cylinder(h=base_thickness+1,d=post_hole_diameter,center=true);
+    cylinder(h=base_thickness+1,d=post_id,center=true);
     // screw head pockets
     translate([0,0,-wall_thickness])
-      cylinder(h=base_thickness,d=screw_head_diameter,center=true);
+      cylinder(h=base_thickness,d=screw_head_od,center=true);
   }
 }
 
@@ -105,8 +112,8 @@ module tray () {
   // add screw posts
   h = gap; // gap+wall_thickness/2;
   mirror_copy([1,0,0]) translate([post_x,post_y,-h]){
-    cylinder(d=post_diameter,h=h);
-    translate([0,-post_diameter/2,0]) cube([post_diameter/2,post_diameter,h]);
+    cylinder(d=post_od,h=h);
+    translate([0,-post_od/2,0]) cube([post_od/2,post_od,h]);
   }
 
   }
@@ -169,8 +176,8 @@ module shell () {
       }
       // add screw posts
       mirror_copy([1,0,0]) translate([post_x,post_y,-gap-fc]) {
-        cylinder(d=post_diameter,h=gap);
-        translate([0,-post_diameter/2,0]) cube([post_diameter/2,post_diameter,gap]);
+        cylinder(d=post_od,h=gap);
+        translate([0,-post_od/2,0]) cube([post_od/2,post_od,gap]);
       }
     }
 
@@ -181,6 +188,6 @@ module shell () {
 
 %pcb();
 
-if (MODEL=="PLATE") plate();
-else if (MODEL=="TRAY") tray();
+if (STYLE=="PLATE") plate();
+else if (STYLE=="TRAY") tray();
 else shell();
