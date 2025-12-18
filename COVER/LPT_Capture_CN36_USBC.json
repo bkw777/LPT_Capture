@@ -1,0 +1,22 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "New set 1": {
+            "FASTENER": "SNAP",
+            "STYLE": "SHELL",
+            "fc": "0.10000000000000001",
+            "lip": "1",
+            "pcb_d": "31.699999999999999",
+            "pcb_r": "3",
+            "pcb_thickness": "1.6000000000000001",
+            "pcb_w": "68",
+            "post_id": "3",
+            "screw_head_thickness": "2.1000000000000001",
+            "usb_h": "8",
+            "usb_w": "14",
+            "usb_y": "-6.8499999999999996",
+            "usb_z": "1.75",
+            "wall_thickness": "1"
+        }
+    }
+}

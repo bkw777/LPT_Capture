@@ -1,32 +1,29 @@
 // Enclosure for LPT_Capture CN36_USBC_FANCY
 //
-// requires 2  #4-40 x 1/4" pan head screws
-// https://www.digikey.com/en/products/detail/keystone-electronics/9900/317321
-// https://www.homedepot.com/p/Everbilt-4-40-x-3-8-in-Phillips-Slotted-Round-Head-Machine-Screws-10-Pack-831431/317478830
+// requires 2  #4-40 x 1/4" flat head screws (by degfault)
 //
 // Use the customizer pane.
 
 STYLE = "SHELL"; // [PLATE,TRAY,SHELL]
+FASTENER = "SNAP"; // [PANHEAD,FLATHEAD,SNAP]
 
 pcb_thickness = 1.6;
-pcb_x = 68;
-pcb_y = 31.7;
+pcb_w = 68;
+pcb_d = 31.7;
 pcb_r = 3; // corner radius
 
 wall_thickness = 1;
-post_id = 3.2; // #4-40 screw, 0.125" hole
+post_id = 3; // #4-40 screw, 2.845 od
 screw_head_od = post_id*2;
 post_od = screw_head_od + wall_thickness*2;
-screw_head_thickness = 2.1; // #4-40 pan head, 0.08" 2.032mm
+screw_head_thickness = 2.1; // #4-40 pan head is just over 2mm thick
 
 post_x = 59.74 / 2; // 59.74 between posts
-post_y = pcb_y/2 - 10.7; // 10.7 from pcb edge
+post_y = pcb_d/2 - 10.7; // 10.7 from pcb edge
 
-gap = screw_head_thickness; // space between bottom of pcb and top of bottom wall
-base_thickness = gap + wall_thickness;
 
-usb_h = 7;
-usb_w = 13;
+usb_h = 8;
+usb_w = 14;
 usb_y = -6.85;
 usb_z = 1.75;
 
@@ -34,6 +31,20 @@ lip = 1;
 fc = 0.1;
 
 /* [Hidden] */
+
+SHELL = (STYLE=="SHELL");
+TRAY = (STYLE=="TRAY");
+PLATE = (STYLE=="PLATE");
+PANHEAD = (FASTENER=="PANHEAD");
+FLATHEAD = (FASTENER=="FLATHEAD");
+SNAP = (FASTENER=="SNAP");
+
+// space between bottom of pcb and top of bottom wall
+gap =
+  (PANHEAD)?screw_head_thickness:
+  (FLATHEAD)?screw_head_thickness-wall_thickness:
+  1;
+base_thickness = gap + wall_thickness;
 
 // arc smoothness
 //$fn = 32;
@@ -46,7 +57,11 @@ module pcb () {
   import("lib/LPT_Capture_CN36_USBC_FANCY.pcb.stl");
 }
 
-module pcb_outline (x=pcb_x,y=pcb_y,z=base_thickness,R=pcb_r,r=0) {
+module screw() {
+  if (FLATHEAD) %import("lib/flathead.stl");
+}
+
+module pcb_outline (x=pcb_w,y=pcb_d,z=base_thickness,R=pcb_r,r=0) {
   hull() {
     if (r) mirror_copy([1,0,0]) translate([x/2-r,y/2-r,0]) cylinder(h=z,r=r,center=true);
     else translate([0,y/2-1,0]) cube([x,2,z],center=true);
@@ -55,13 +70,23 @@ module pcb_outline (x=pcb_x,y=pcb_y,z=base_thickness,R=pcb_r,r=0) {
   }
 }
 
+module screw_posts () {
+  if (!SNAP) mirror_copy([1,0,0]) translate([post_x,post_y,-gap-fc]) {
+    cylinder(d=post_od,h=gap);
+    translate([0,-post_od/2,0]) cube([post_od/2,post_od,gap]);
+  }
+}
+
 module screw_holes () {
-  mirror_copy([1,0,0]) translate([post_x,post_y,-base_thickness/2]) {
+  if (!SNAP) mirror_copy([1,0,0]) translate([post_x,post_y,-base_thickness-fc]) {
     // screw holes
-    cylinder(h=base_thickness+1,d=post_id,center=true);
+    cylinder(h=base_thickness+fc*2,d=post_id);
     // screw head pockets
-    translate([0,0,-wall_thickness])
-      cylinder(h=base_thickness,d=screw_head_od,center=true);
+    if (FLATHEAD) {
+      cylinder(h=base_thickness+fc,d2=post_id,d1=screw_head_od);
+      translate([0,0,fc*2]) screw();
+    }
+    else translate([0,0,-wall_thickness]) cylinder(h=base_thickness,d=screw_head_od);
   }
 }
 
@@ -70,10 +95,11 @@ module plate () {
     translate([0,0,-base_thickness/2]) pcb_outline();
 
     union() {
-      screw_holes();
-      // pin legs pocket
+      // pocket for solder legs
       translate([0,post_y,-base_thickness/2+wall_thickness])
-      cube([40,7,base_thickness],center=true);
+        cube([40,7,base_thickness],center=true);
+
+      screw_holes();
     }
 
   }
@@ -90,18 +116,18 @@ module tray () {
     union(){
       // main
       translate([0,0,-th/2+pcb_thickness])
-        pcb_outline(x=pcb_x+wall_thickness*2+fc*2,y=pcb_y+wall_thickness*2+fc*2,z=th,R=pcb_r+wall_thickness+fc,r=wall_thickness);
+        pcb_outline(x=pcb_w+wall_thickness*2+fc*2,y=pcb_d+wall_thickness*2+fc*2,z=th,R=pcb_r+wall_thickness+fc,r=wall_thickness);
     }
 
     union(){
       // pcb tray
-      translate([0,0,th/2])
-      pcb_outline(x=pcb_x+fc*2,y=pcb_y+fc*2,z=th,R=pcb_r+fc);
+      translate([0,0,th/2-fc])
+      pcb_outline(x=pcb_w+fc*2,y=pcb_d+fc*2,z=th,R=pcb_r+fc);
       // gap cavity
       translate([0,0,th/2-gap])
-      pcb_outline(x=pcb_x-lip*2,y=pcb_y-lip*2,z=th,R=pcb_r-wall_thickness);
+      pcb_outline(x=pcb_w-lip*2,y=pcb_d-lip*2,z=th,R=pcb_r-wall_thickness);
       // usb
-      translate([-pcb_x/2,usb_y,pcb_thickness+usb_z]) rotate([90,0,-90])
+      translate([-pcb_w/2,usb_y,pcb_thickness+usb_z]) rotate([90,0,-90])
       hull() mirror_copy([1,0,0])
       translate([usb_w/2-usb_h/2,0,0])
       cylinder(h=wall_thickness+fc*2,d=usb_h);
@@ -110,14 +136,11 @@ module tray () {
   }
 
   // add screw posts
-  h = gap; // gap+wall_thickness/2;
-  mirror_copy([1,0,0]) translate([post_x,post_y,-h]){
-    cylinder(d=post_od,h=h);
-    translate([0,-post_od/2,0]) cube([post_od/2,post_od,h]);
-  }
+  screw_posts();
 
   }
 
+  // cut screw holes
   screw_holes();
   }
   
@@ -126,68 +149,75 @@ module tray () {
 module shell () {
   H = 17.2;
   T = 14;
-  
+  r = wall_thickness+fc;
+  sw = pcb_w-pcb_r*2;
+
   difference() {
     union() {
       difference() {
+        union() {
         hull() {
-          mirror_copy([1,0,0]) {
-            translate([0,-T/2+pcb_y/2,H/2-gap/2]) mirror_copy([0,1,0])
-              mirror_copy([0,0,1])
-                translate([pcb_x/2,T/2-wall_thickness,H/2+gap/2])
-                  sphere(r=wall_thickness+fc);
-            translate([pcb_x/2-pcb_r,-pcb_y/2+pcb_r,pcb_r-gap])
-              sphere(r=pcb_r+fc+wall_thickness);
-            *translate([pcb_x/2,-pcb_y/2+pcb_r,-gap])
-              #sphere(r=fc+wall_thickness);
-            translate([pcb_x/2-pcb_r,-pcb_y/2+pcb_r,pcb_r])
-              sphere(r=pcb_r+fc+wall_thickness);
-            *translate([pcb_x/2-pcb_r,pcb_y/2-D,H-pcb_r])
-              #sphere(r=pcb_r+fc+wall_thickness);
-          }
+          translate([0,pcb_d/2-T/2,H/2-gap/2]) rounded_cube(w=pcb_w+r*2,d=T,h=H+gap+r*2,rh=r,rv=r,t=0);
+          R = pcb_r+fc+wall_thickness;
+          z = r*2+usb_h;
+          translate([0,-pcb_d/2+pcb_r,z/2-fc-base_thickness]) rounded_cube(w=pcb_w+r*2,d=R*2,h=z,rh=R,rv=r,t=0);
+        }
+        if (SNAP) {
+          fd = wall_thickness/2+fc+lip+1;
+          br = r;
+          hull() mirror_copy([1,0,0]) translate([sw/2-br,pcb_d/2+fc+x,br-fc-base_thickness]) rotate([90,0,0]) cylinder(r=br,h=fd);
+        }
         }
 
         union () {
           hull() {
-            translate([-pcb_x/2-fc,pcb_y/2-T+1,-fc])
-              cube([pcb_x+fc*2,T+1,H+fc*2]);
-            mirror_copy([1,0,0]) translate([pcb_x/2-pcb_r,-pcb_y/2+pcb_r,-fc]) {
+            translate([-pcb_w/2-fc,pcb_d/2-T+1,-fc])
+              cube([pcb_w+fc*2,T+1,H+fc*2]);
+            mirror_copy([1,0,0]) translate([pcb_w/2-pcb_r,-pcb_d/2+pcb_r,-fc]) {
               cylinder(r=pcb_r+fc,h=pcb_thickness+fc*2);
               translate([0,0,pcb_r+fc])
                 sphere(r=pcb_r+fc);
             }
-            *mirror_copy([1,0,0]) translate([pcb_x/2-pcb_r,pcb_y/2-D,H-pcb_r])
-              #sphere(r=pcb_r+fc);
           }
 
           // gap cavity
           th = wall_thickness + gap + pcb_thickness;
 
           translate([0,0,th/2-gap])
-            pcb_outline(x=pcb_x-lip*2,y=pcb_y-lip*2,z=th,R=pcb_r-wall_thickness);
+            pcb_outline(x=pcb_w-lip*2,y=pcb_d-lip*2,z=th,R=pcb_r-wall_thickness);
 
-          // usb
-          x = 1;
-          translate([-pcb_x/2+x,usb_y,pcb_thickness+usb_z]) rotate([90,0,-90])
+          // cut usb
+          x = wall_thickness+fc+lip+2; // make sure it goes well past the lip
+          translate([x-pcb_w/2-fc-wall_thickness-fc,usb_y,pcb_thickness+usb_z]) rotate([90,0,-90])
             hull() mirror_copy([1,0,0])
               translate([usb_w/2-usb_h/2,0,0])
-              cylinder(h=wall_thickness+fc*2+x,d=usb_h);
+                cylinder(h=x,d=usb_h);
         }
       }
+      // replace part of lip cut away by usb
+      translate([-pcb_w/2,usb_y-usb_w/2,-gap-fc]) cube([lip,usb_w,gap]);
       // add screw posts
-      mirror_copy([1,0,0]) translate([post_x,post_y,-gap-fc]) {
-        cylinder(d=post_od,h=gap);
-        translate([0,-post_od/2,0]) cube([post_od/2,post_od,gap]);
+      screw_posts();
+      // add pcb top grabber
+      x = wall_thickness/2;
+      translate([0,lip/2-pcb_d/2-fc,x+pcb_thickness+fc]) rounded_cube(w=sw,d=lip+fc+x*2,h=wall_thickness,rh=x,rv=x);
+      // add front lip
+      if (SNAP) {
+        h = base_thickness;
+        d = wall_thickness*2+r*2;
+        ft = base_thickness+fc+pcb_thickness;
+        translate([0,pcb_d/2+x+fc,ft/2-fc-base_thickness]) rotate([90,0,0]) rounded_cube(w=sw,d=ft,h=wall_thickness,rh=r,rv=wall_thickness/2);
       }
     }
 
-    screw_holes();
+    // cut screw holes
+    translate([0,0,-fc]) screw_holes();
   }
 }
 
 
 %pcb();
 
-if (STYLE=="PLATE") plate();
-else if (STYLE=="TRAY") tray();
+if (PLATE) plate();
+else if (TRAY) tray();
 else shell();
