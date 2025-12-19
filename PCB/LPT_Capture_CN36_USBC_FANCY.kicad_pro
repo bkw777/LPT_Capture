@@ -573,7 +573,7 @@
       "plot": "GERBER_${TITLE}_${REVISION}",
       "pos_files": "GERBER_${TITLE}_${REVISION}",
       "specctra_dsn": "",
-      "step": "out/${TITLE}.stl",
+      "step": "../COVER/lib/${TITLE}.pcb.stl",
       "svg": "",
       "vrml": ""
     },
@@ -660,6 +660,12 @@
           "group_by": false,
           "label": "Sim.Pins",
           "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LABEL",
+          "name": "LABEL",
           "show": false
         }
       ],

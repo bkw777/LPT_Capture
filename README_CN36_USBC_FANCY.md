@@ -15,6 +15,8 @@ todo: printable encosure
 
 ![](PCB/out/LPT_Capture_CN36_USBC_FANCY.jpg)
 ![](PCB/out/LPT_Capture_CN36_USBC_FANCY.2.jpg)
+![](PCB/out/LPT_Capture_CN36_USBC_FANCY.3.jpg)
+![](PCB/out/LPT_Capture_CN36_USBC_FANCY.4.jpg)
 ![](PCB/out/LPT_Capture_CN36_USBC_FANCY.top.jpg)
 ![](PCB/out/LPT_Capture_CN36_USBC_FANCY.bottom.jpg)
 ![](PCB/out/LPT_Capture_CN36_USBC_FANCY.svg)
