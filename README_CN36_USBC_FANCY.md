@@ -11,8 +11,6 @@ WIP NOT TESTED
 This version is useful for hosts that don't have a standard IBM style db25 parallel printer port, but do have a printer cable that ends in a standard 36 pin Centronics plug.  
 Examples: TRS-80 Model I, Model 100
 
-todo: printable encosure
-
 ![](PCB/out/LPT_Capture_CN36_USBC_FANCY.jpg)
 ![](PCB/out/LPT_Capture_CN36_USBC_FANCY.2.jpg)
 ![](PCB/out/LPT_Capture_CN36_USBC_FANCY.3.jpg)
