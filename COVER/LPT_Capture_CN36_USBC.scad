@@ -13,8 +13,12 @@ usb_h = 8;
 usb_w = 14;
 
 cn36_top_depth = 7; // [7,15]
+cn36_height = 15.6;
 
-led_diameter = 5.2;
+led_diameter = 5; // 0.1
+
+// short end inside ceiling height above pcb, 0 = auto based on usb_h and led_diameter
+rear_height = 0;
 
 lip = 1;
 fitment_clearance = 0.1;
@@ -37,14 +41,16 @@ post_x = 59.74 / 2; // 59.74 between posts
 post_y = pcb_d/2 - 10.7; // 10.7 from pcb edge
 
 usb_y = -6.85;
-usb_z = 1.75;
+usb_z = 1.7;
 
-cn_h = 17.2;
+// rear_height=0 -> auto
+rh = pcb_thickness + fc + (rear_height?rear_height:max(usb_z+usb_h/2,led_diameter+1));
+
+cn_h = cn36_height;
 cn_vd = cn36_top_depth;
 
 led1_x = 28;
 led2_x = 21;
-led_od = led_diameter;
 
 SHELL = (STYLE=="SHELL");
 TRAY = (STYLE=="TRAY");
@@ -75,13 +81,13 @@ assert (wall_thickness>minimum_wall_thickness-0.1);  // >= test doesn't work?
 
 include <lib/handy.scad>;
 
-module bisect () {
+module bisect (x=0) {
   w = pcb_w/2+fc+wall_thickness+1;
   d = 1+wall_thickness+fc+pcb_d+fc+wall_thickness+1;
-  h = 1+base_thickness+fc+cn_h+fc+wall_thickness+1;
+  h = 1+base_thickness+fc+pcb_thickness+cn_h+fc+wall_thickness+1;
   difference() {
     children();
-    translate([0,-d/2,-fc-base_thickness-1]) cube([w,d,h]);
+    translate([x,-d/2,-fc-base_thickness-1]) cube([w,d,h]);
   }
 }
 
@@ -199,34 +205,41 @@ module tray () {
 // Difficult to print with FDM, suggest commercial SLS or MJF
 // todo: expose LEDs
 module shell () {
-  r = wall_thickness+fc;
   sw = pcb_w-14;
   rw = pcb_w/2;
+  r = wall_thickness;
+  R = pcb_r+fc+wall_thickness;
+  orh = base_thickness+rh+r;
+  fh = cn_h+fc;
+  ofh = base_thickness + fc + pcb_thickness + fh + wall_thickness;
 
   difference() {
     union() {
       difference() {
         union() {
           hull() {
-            translate([0,pcb_d/2-cn_vd/2,cn_h/2-gap/2]) rounded_cube(w=pcb_w+r*2,d=cn_vd,h=cn_h+gap+r*2,rh=r,rv=r,t=0);
-            R = pcb_r+fc+wall_thickness;
-            z = r*2+usb_h;
-            translate([0,-pcb_d/2+pcb_r,z/2-fc-base_thickness]) rounded_cube(w=pcb_w+r*2,d=R*2,h=z,rh=R,rv=r,t=0);
+            // add outside front
+            
+            translate([0,pcb_d/2-cn_vd/2,ofh/2-base_thickness]) rounded_cube(w=pcb_w+r*2,d=cn_vd,h=ofh,rh=r,rv=r,t=0);
+            // add outside rear
+            translate([0,-pcb_d/2+pcb_r,orh/2-base_thickness]) rounded_cube(w=pcb_w+r*2,d=R*2,h=orh,rh=R,rv=r,t=0);
           }
           // add front lip
           if (SNAP) {
             fd = wall_thickness/2+fc+lip+1;
-            br = r;
-            hull() mirror_copy([1,0,0]) translate([sw/2-br,pcb_d/2+fc+x,br-fc-base_thickness]) rotate([90,0,0]) cylinder(r=br,h=fd);
+            br = base_thickness/2;
+            hull() mirror_copy([1,0,0]) translate([sw/2-br,pcb_d/2+fc+x,br-base_thickness]) rotate([90,0,0]) cylinder(r=br,h=fd);
           }
         }
 
         union() {
           hull() {
+            // cut inside front
             translate([-pcb_w/2-fc,pcb_d/2-cn_vd+1,-fc])
-              cube([pcb_w+fc*2,cn_vd+1,cn_h+fc*2]);
+              cube([pcb_w+fc*2,cn_vd+1,fc+pcb_thickness+fh]);
+            // cut inside rear
             mirror_copy([1,0,0]) translate([pcb_w/2-pcb_r,-pcb_d/2+pcb_r,-fc])
-              cylinder(r=pcb_r+fc,h=usb_h-gap+fc);
+              cylinder(r=pcb_r+fc,h=rh);
           }
 
           // gap cavity
@@ -235,15 +248,19 @@ module shell () {
             pcb_outline(x=pcb_w-lip*2,y=pcb_d-lip*2,z=th,R=pcb_r-wall_thickness);
 
           // cut usb
-          x = fc+lip+fc+wall_thickness+fc;
+          // depth of cut
+          //x = fc+wall_thickness+fc; // just the wall
+          //x = fc+lip+fc+wall_thickness+fc; // just past the lip
+          x = fc+pcb_r+fc+wall_thickness+fc; // entire possible curvature at the rear corner
           translate([x-pcb_w/2-fc-wall_thickness-fc,usb_y,pcb_thickness+usb_z]) rotate([90,0,-90])
             hull() mirror_copy([1,0,0])
               translate([usb_w/2-usb_h/2,0,0])
                 cylinder(h=x,d=usb_h);
           // cut LEDs
           translate([0,-pcb_d/2-fc-wall_thickness/2,pcb_thickness+3]) {
-            translate([led1_x,0,0]) rotate([90,0,0]) cylinder(h=wall_thickness*2,d=led_od,center=true);
-            translate([led2_x,0,0]) rotate([90,0,0]) cylinder(h=wall_thickness*2,d=led_od,center=true);
+            _d = led_diameter + fc;
+            translate([led1_x,0,0]) rotate([90,0,0]) cylinder(h=wall_thickness*2,d=_d,center=true);
+            translate([led2_x,0,0]) rotate([90,0,0]) cylinder(h=wall_thickness*2,d=_d,center=true);
           }
         }
       }
@@ -259,10 +276,17 @@ module shell () {
       mirror_copy([1,0,0]) translate([rw/2,0,0]) {
         // top
         hull() {
-          translate([0,-pcb_d/2,usb_h-gap]) rotate([0,90,0]) cylinder(h=wall_thickness,r=r,center=true);
-          translate([0,-pcb_d/2-wall_thickness/2-fc,wall_thickness/2+pcb_thickness+fc]) rotate([0,90,0]) cylinder(h=wall_thickness,d=wall_thickness,center=true);
-          translate([0,-pcb_d/2+lip,lip+wall_thickness+pcb_thickness+fc]) rotate([0,90,0]) cylinder(h=wall_thickness,r=lip+wall_thickness,center=true);
-          translate([0,pcb_d/2+fc+wall_thickness-cn_vd,wall_thickness/2+cn_h+fc]) rotate([0,90,0]) cylinder(h=wall_thickness,d=wall_thickness,center=true);
+          // outside edges pulled fc in from real exterior
+          _r = wall_thickness/2;
+          // top rear
+          translate([0,-pcb_d/2,rh-fc]) rotate([0,90,0]) cylinder(h=wall_thickness,r=r,center=true);
+          // bottom rear
+          translate([0,-pcb_d/2-_r,_r+pcb_thickness+fc]) rotate([0,90,0]) cylinder(h=wall_thickness,r=_r,center=true);
+          // bottom front
+          _R = min(rh,lip+wall_thickness);
+          translate([0,-pcb_d/2+lip,_R+pcb_thickness+fc]) rotate([0,90,0]) cylinder(h=wall_thickness,r=_R,center=true);
+          // top front
+          translate([0,pcb_d/2+wall_thickness-cn_vd-fc,_r+pcb_thickness+fh]) rotate([0,90,0]) cylinder(h=wall_thickness,r=_r,center=true);
         }
         // bottom
         hull() {
@@ -274,8 +298,10 @@ module shell () {
       }
       // add front lip
       if (SNAP) {
-        t = base_thickness+fc+pcb_thickness;
-        translate([0,pcb_d/2+x+fc,t/2-fc-base_thickness]) rotate([90,0,0]) rounded_cube(w=sw,d=t,h=wall_thickness,rh=r,rv=wall_thickness/2);
+        // limitation of rounded_cube(), must draw with larger radius horizontal,
+        // then rotate, depth becomes height
+        t = base_thickness+pcb_thickness;
+        translate([0,pcb_d/2+x+fc,t/2-base_thickness]) rotate([90,0,0]) rounded_cube(w=sw,d=t,h=wall_thickness,rh=r,rv=wall_thickness/2);
       }
     }
 
@@ -290,6 +316,7 @@ module shell () {
 
 %pcb();
 
+//bisect(x=17)
 //bisect()
 if (PLATE) plate();
 else if (TRAY) tray();
