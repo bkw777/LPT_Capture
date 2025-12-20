@@ -2,8 +2,8 @@
     "fileFormatVersion": "1",
     "parameterSets": {
         "Tray_Flathead": {
-            "FASTENER": "FLATHEAD",
-            "STYLE": "TRAY",
+            "FASTENER": "SNAP-TOGETHER",
+            "STYLE": "SHELL",
             "fitment_clearance": "0.10000000000000001",
             "led_diameter": "5.2000000000000002",
             "lip": "1",

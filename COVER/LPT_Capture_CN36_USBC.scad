@@ -4,13 +4,15 @@
 // PANHEAD or FLATHEAD requires 2  #4-40 x 1/4" screws.
 
 STYLE = "SHELL"; // [PLATE,TRAY,SHELL]
-FASTENER = "SNAP"; // [PANHEAD,FLATHEAD,SNAP]
+FASTENER = "SNAP-TOGETHER"; // [PAN-HEAD,FLAT-HEAD,SNAP-TOGETHER]
 
 wall_thickness = 1; // 0.1
 screw_hole_id = 3; // #4-40 screw, 2.845 od
 
 usb_h = 8;
 usb_w = 14;
+
+cn36_top_depth = 7; // [7,15]
 
 led_diameter = 5.2;
 
@@ -38,6 +40,7 @@ usb_y = -6.85;
 usb_z = 1.75;
 
 cn_h = 17.2;
+cn_vd = cn36_top_depth;
 
 led1_x = 28;
 led2_x = 21;
@@ -46,9 +49,9 @@ led_od = led_diameter;
 SHELL = (STYLE=="SHELL");
 TRAY = (STYLE=="TRAY");
 PLATE = (STYLE=="PLATE");
-PANHEAD = (FASTENER=="PANHEAD");
-FLATHEAD = (FASTENER=="FLATHEAD");
-SNAP = (FASTENER=="SNAP");
+PANHEAD = (FASTENER=="PAN-HEAD");
+FLATHEAD = (FASTENER=="FLAT-HEAD");
+SNAP = (FASTENER=="SNAP-TOGETHER");
 
 // space between bottom of pcb and top of bottom wall
 gap =
@@ -83,7 +86,8 @@ module bisect () {
 }
 
 module pcb () {
-  import("lib/LPT_Capture_CN36_USBC_FANCY.pcb.stl");
+  if (!SHELL) import("lib/LPT_Capture_CN36_USBC_FANCY_tray.pcb.stl");
+  else import("lib/LPT_Capture_CN36_USBC_FANCY.pcb.stl");
 }
 
 module screw () {
@@ -195,7 +199,6 @@ module tray () {
 // Difficult to print with FDM, suggest commercial SLS or MJF
 // todo: expose LEDs
 module shell () {
-  T = 14;
   r = wall_thickness+fc;
   sw = pcb_w-14;
   rw = pcb_w/2;
@@ -205,7 +208,7 @@ module shell () {
       difference() {
         union() {
           hull() {
-            translate([0,pcb_d/2-T/2,cn_h/2-gap/2]) rounded_cube(w=pcb_w+r*2,d=T,h=cn_h+gap+r*2,rh=r,rv=r,t=0);
+            translate([0,pcb_d/2-cn_vd/2,cn_h/2-gap/2]) rounded_cube(w=pcb_w+r*2,d=cn_vd,h=cn_h+gap+r*2,rh=r,rv=r,t=0);
             R = pcb_r+fc+wall_thickness;
             z = r*2+usb_h;
             translate([0,-pcb_d/2+pcb_r,z/2-fc-base_thickness]) rounded_cube(w=pcb_w+r*2,d=R*2,h=z,rh=R,rv=r,t=0);
@@ -220,8 +223,8 @@ module shell () {
 
         union() {
           hull() {
-            translate([-pcb_w/2-fc,pcb_d/2-T+1,-fc])
-              cube([pcb_w+fc*2,T+1,cn_h+fc*2]);
+            translate([-pcb_w/2-fc,pcb_d/2-cn_vd+1,-fc])
+              cube([pcb_w+fc*2,cn_vd+1,cn_h+fc*2]);
             mirror_copy([1,0,0]) translate([pcb_w/2-pcb_r,-pcb_d/2+pcb_r,-fc])
               cylinder(r=pcb_r+fc,h=usb_h-gap+fc);
           }
@@ -259,7 +262,7 @@ module shell () {
           translate([0,-pcb_d/2,usb_h-gap]) rotate([0,90,0]) cylinder(h=wall_thickness,r=r,center=true);
           translate([0,-pcb_d/2-wall_thickness/2-fc,wall_thickness/2+pcb_thickness+fc]) rotate([0,90,0]) cylinder(h=wall_thickness,d=wall_thickness,center=true);
           translate([0,-pcb_d/2+lip,lip+wall_thickness+pcb_thickness+fc]) rotate([0,90,0]) cylinder(h=wall_thickness,r=lip+wall_thickness,center=true);
-          translate([0,pcb_d/2+fc+wall_thickness-T,wall_thickness/2+cn_h+fc]) rotate([0,90,0]) cylinder(h=wall_thickness,d=wall_thickness,center=true);
+          translate([0,pcb_d/2+fc+wall_thickness-cn_vd,wall_thickness/2+cn_h+fc]) rotate([0,90,0]) cylinder(h=wall_thickness,d=wall_thickness,center=true);
         }
         // bottom
         hull() {

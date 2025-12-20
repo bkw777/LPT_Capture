@@ -71,14 +71,6 @@
         [
           "hole_clearance|122855000|98950000|b55d16ef-8d19-4a6c-b4c2-680949cf84ba|7621d0af-291c-4999-9040-e66256e1584e",
           ""
-        ],
-        [
-          "silk_edge_clearance|116000000|106470000|00000000-0000-0000-0000-000060bbe5cb|e3271613-9945-4b24-8151-58fbcfecb4a4",
-          ""
-        ],
-        [
-          "silk_edge_clearance|116000000|97530000|00000000-0000-0000-0000-000060bbe5cb|544a98b6-b402-4898-b67f-ff4dd4a1f06c",
-          ""
         ]
       ],
       "meta": {
@@ -573,7 +565,7 @@
       "plot": "GERBER_${TITLE}_${REVISION}",
       "pos_files": "GERBER_${TITLE}_${REVISION}",
       "specctra_dsn": "",
-      "step": "../COVER/lib/${TITLE}.pcb.stl",
+      "step": "../COVER/lib/${TITLE}_tray.pcb.stl",
       "svg": "",
       "vrml": ""
     },
