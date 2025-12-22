@@ -1,0 +1,10 @@
+https://www.retroprinter.com/the-retro-printer-frequently-asked-questions/#collapse_468_1
+
+"...
+During development, we found various machines and computers which needed 5V on pin 13 (ERROR) and pin 32 (SELECT) in order to recognise that a working printer was connected.  Some equipment even appears to require 5V on pin 18.
+
+However, since we started selling the v3 production model, we have found some equipment (or more likely the centronics cables) connects one or both of these lines to GND.  This drains the power from the Raspberry Pi and is fixed by using the supplied cable convertor for the v3 Retro-Printer module.  
+
+The v4 Retro-Printer module includes changes to allow for more combinations of hardware and overcome the GND issue.  It has jumpers to enable or disable the 5V on pins 13, 18 and pin 32.
+..."
+
