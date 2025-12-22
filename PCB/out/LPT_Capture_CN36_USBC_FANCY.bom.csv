@@ -2,6 +2,7 @@
 "C1,C2","0.1u","000_LOCAL:C_0805","2","","885012207045","CAP CER 0.1UF 16V X7R 0805"
 "C3","4.7u","000_LOCAL:C_0805","1","","GRM21BR71C475KE51L","CAP CER 4.7UF 16V X7R 0805"
 "C4","10n","000_LOCAL:C_0805","1","","885012207039","CAP CER 10000PF 16V X7R 0805"
+"F1","500ma","000_LOCAL:F_1206","1","","0ZCJ0050AF2E","Resettable fuse, polymeric positive temperature coefficient, small symbol"
 "FB1","40-1.5A","000_LOCAL:L_0805","1","","MH2029-400Y","FERRITE BEAD 40 OHM 0805 1LN"
 "J1","GSB1C411101DS1HR","000_LOCAL:USBC_Receptacle_16pin_top_mount","1","","GSB1C411101DS1HR","USB 2.0-only 16P Type-C Receptacle connector"
 "J2","112-036-213R001","000_LOCAL:Centronics_36F_RA_THT","1","","112-036-213R001","Centronics 36pin female 0.85 pitch"
@@ -11,4 +12,5 @@
 "R1,R2","5K1","000_LOCAL:R_0805","2","","RC0805FR-075K1L","RES 5K1 OHM 1% 1/8W 0805"
 "R3,R4,R5,R6,R7","10k","000_LOCAL:R_0805","5","","RC0805JR-0710KL","RES 10K OHM 5% 1/8W 0805"
 "RA1,RA2,RA3,RA4","100r","000_LOCAL:R_Array_Convex_4x0603","4","","CAY16-101J4LF","RES ARRAY 4 RES 100 OHM 1206 convex"
+"SW1","SW_DIP_x04","000_LOCAL:SW_DIP_SPSTx04_Piano_Jumper_dual","1","","76PSB04T","4x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
 "U1","FT245RL","000_LOCAL:SSOP-28","1","","FT245RNL","IC USB TO PARALLEL FIFO 28-SSOP"

@@ -15,13 +15,27 @@ usb_w = 14;
 cn36_top_depth = 7; // [7,15]
 cn36_height = 15.6;
 
+LEDS = true;
 led_diameter = 5; // 0.1
 
 // short end inside ceiling height above pcb, 0 = auto based on usb_h and led_diameter
-rear_height = 0;
+rear_height = 0; //0.1
+
+// dip switch access
+DIPSW = true;
+sw_w = 12.8;
+sw_d = 13;
+sw_d2 = 6;
+sw_h = 5; // cn36_height+2;
+sw_h2 = cn36_height+2;
+sw_r = 0.5;
+sw_x = 10;
+sw_z = 3;
 
 lip = 1;
 fitment_clearance = 0.1;
+
+CONFIGURATION_NOTES = "";
 
 /* [Hidden] */
 
@@ -51,6 +65,9 @@ cn_vd = cn36_top_depth;
 
 led1_x = 28;
 led2_x = 21;
+led_l = 10;
+
+sw_zz = sw_z?sw_z:(fc+wall_thickness);
 
 SHELL = (STYLE=="SHELL");
 TRAY = (STYLE=="TRAY");
@@ -92,7 +109,7 @@ module bisect (x=0) {
 }
 
 module pcb () {
-  if (!SHELL) import("lib/LPT_Capture_CN36_USBC_FANCY_tray.pcb.stl");
+  if (!SHELL || !LEDS) import("lib/LPT_Capture_CN36_USBC_FANCY.alt.pcb.stl");
   else import("lib/LPT_Capture_CN36_USBC_FANCY.pcb.stl");
 }
 
@@ -257,10 +274,17 @@ module shell () {
               translate([usb_w/2-usb_h/2,0,0])
                 cylinder(h=x,d=usb_h);
           // cut LEDs
-          translate([0,-pcb_d/2-fc-wall_thickness/2,pcb_thickness+3]) {
+          if (LEDS) translate([0,-pcb_d/2-fc-wall_thickness-fc,pcb_thickness+3]) {
             _d = led_diameter + fc;
-            translate([led1_x,0,0]) rotate([90,0,0]) cylinder(h=wall_thickness*2,d=_d,center=true);
-            translate([led2_x,0,0]) rotate([90,0,0]) cylinder(h=wall_thickness*2,d=_d,center=true);
+            translate([led1_x,0,0]) rotate([-90,0,0]) cylinder(h=led_l,d=_d);
+            translate([led2_x,0,0]) rotate([-90,0,0]) cylinder(h=led_l,d=_d);
+          }
+          // cut DIP Switch
+          if (DIPSW) {
+            translate([sw_x,sw_d/2-pcb_d/2-fc-wall_thickness-fc-sw_r,sw_h/2+pcb_thickness+sw_zz])
+              rounded_cube(w=sw_w,d=sw_d,h=sw_h,rh=sw_r,rv=sw_r);
+            translate([sw_x,sw_d2/2-pcb_d/2-fc-wall_thickness-fc-sw_r,sw_h2/2+pcb_thickness+sw_zz])
+              rounded_cube(w=sw_w,d=sw_d2,h=sw_h2,rh=sw_r,rv=sw_r);
           }
         }
       }
