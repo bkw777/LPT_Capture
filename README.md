@@ -46,12 +46,14 @@ None of the rest of these are tested yet.
 # Credits
 [LptCap](https://www-user.tu-chemnitz.de/~heha/basteln/PC/LptCap/index.en.htm)
 
-Differences from the original LptCap:  
-* Re-drawn in KiCad instead of Eagle
+Differences:  
+* KiCad instead of Eagle
 * SSOP chip instead of QFN - easier to hand solder
 * 0805 passives instead of 0603 - easier to hand solder
 * microusb or usbc instead of miniusb
 * mid-mount usb port - positions the plug in the center of the cable opening
 * Snap-together backshell instead of screws & nuts
-* Pullups to VCC (5V) instead of 3V3OUT - LPT signals are 5V
+* VCCIO powered by VCC (5V) instead of 3V3OUT - LPT signals are 5V
 * VBUS & VCC power conditioning per FT245R datasheet
+* "fancy" versions impliment more signals (ONLINE, /SELIN, /RESET, /ERROR)
+* CN36 version adds Peripheral Logic High and 5V power
