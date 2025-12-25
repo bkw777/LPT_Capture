@@ -4444,7 +4444,7 @@
 		)
 		(uuid "262c4fdd-f0b2-474f-ae16-510cdfc1c404")
 	)
-	(text "pPE"
+	(text "PE"
 		(exclude_from_sim no)
 		(at 246.38 53.34 0)
 		(effects
@@ -4455,7 +4455,7 @@
 		)
 		(uuid "5c66e690-bfb5-45fd-bf15-ff879b8e3853")
 	)
-	(text "~{pERROR}"
+	(text "~{ERROR}"
 		(exclude_from_sim no)
 		(at 246.38 101.6 0)
 		(effects
@@ -4488,7 +4488,7 @@
 		)
 		(uuid "d0d1d2c1-5ad7-41b5-94da-7d2b2b9ececa")
 	)
-	(text "~{pACK}"
+	(text "~{ACK}"
 		(exclude_from_sim no)
 		(at 246.38 63.5 0)
 		(effects
@@ -4634,12 +4634,6 @@
 		(uuid "9d822a3f-f697-4287-818e-9a20010e8789")
 	)
 	(junction
-		(at 203.2 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a676951f-e0f5-494c-87dd-4d8cf262da12")
-	)
-	(junction
 		(at 62.23 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4668,6 +4662,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b9dd0c26-d15e-4fea-a1c5-205891244882")
+	)
+	(junction
+		(at 203.2 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bbe5a956-8dba-4632-977d-911e481d0640")
 	)
 	(junction
 		(at 139.7 55.88)
@@ -5087,16 +5087,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 36.83) (xy 203.2 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f921408-cc81-435e-b815-76ed0bf7a1ac")
-	)
-	(wire
-		(pts
 			(xy 234.95 55.88) (xy 234.95 60.96)
 		)
 		(stroke
@@ -5497,7 +5487,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 38.1) (xy 215.9 38.1)
+			(xy 203.2 41.91) (xy 215.9 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5577,7 +5567,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 91.44) (xy 215.9 38.1)
+			(xy 215.9 91.44) (xy 215.9 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5624,16 +5614,6 @@
 			(type default)
 		)
 		(uuid "d55f5748-2728-4616-8e6d-72bdd31ab4cf")
-	)
-	(wire
-		(pts
-			(xy 203.2 39.37) (xy 203.2 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d57737f2-56c3-447d-bb22-5c162a998d10")
 	)
 	(wire
 		(pts
@@ -5845,7 +5825,7 @@
 		)
 		(uuid "fed491b8-aff4-4c1b-bcaa-e559ca8ba7dc")
 	)
-	(label "pD7"
+	(label "PD7"
 		(at 246.38 68.58 180)
 		(effects
 			(font
@@ -5855,7 +5835,7 @@
 		)
 		(uuid "00c37b98-4042-442a-a6be-691160d4036a")
 	)
-	(label "pBUSY"
+	(label "BUSY"
 		(at 246.38 58.42 180)
 		(effects
 			(font
@@ -5865,7 +5845,7 @@
 		)
 		(uuid "0113f244-cd1f-47dc-92f8-d784a7e46f24")
 	)
-	(label "~{pSELIN}"
+	(label "~{SELIN}"
 		(at 215.9 101.6 0)
 		(effects
 			(font
@@ -5875,7 +5855,7 @@
 		)
 		(uuid "0153b822-f2a1-448c-8629-c7a3d9997e84")
 	)
-	(label "~{STROBE}"
+	(label "~{STR}"
 		(at 177.8 101.6 0)
 		(effects
 			(font
@@ -5885,7 +5865,7 @@
 		)
 		(uuid "019f10f0-d1d5-4fca-90bc-dbff032c0d54")
 	)
-	(label "pONLINE"
+	(label "ONLINE"
 		(at 246.38 48.26 180)
 		(effects
 			(font
@@ -5895,7 +5875,7 @@
 		)
 		(uuid "16a66b83-c7f8-458f-9c5c-f01e4d3db2eb")
 	)
-	(label "pD3"
+	(label "PD3"
 		(at 246.38 88.9 180)
 		(effects
 			(font
@@ -5945,7 +5925,7 @@
 		)
 		(uuid "201021af-960c-4a1b-8b15-8b240b322483")
 	)
-	(label "pONLINE"
+	(label "ONLINE"
 		(at 177.8 55.88 0)
 		(effects
 			(font
@@ -5975,7 +5955,7 @@
 		)
 		(uuid "250560da-f3b8-4ebf-9bf5-59e6d6e3a7a5")
 	)
-	(label "~{pSELIN}"
+	(label "~{SELIN}"
 		(at 246.38 91.44 180)
 		(effects
 			(font
@@ -5985,7 +5965,17 @@
 		)
 		(uuid "28ee84bb-bcf9-4d41-9218-b3ca01028569")
 	)
-	(label "pD4"
+	(label "~{SELIN}"
+		(at 215.9 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2da7cac4-cf83-4c83-8572-06b9a2257bce")
+	)
+	(label "PD4"
 		(at 246.38 83.82 180)
 		(effects
 			(font
@@ -6005,7 +5995,7 @@
 		)
 		(uuid "36f54c1f-d52e-4466-b367-e82e5ea67763")
 	)
-	(label "~{pSTROBE}"
+	(label "~{STROBE}"
 		(at 220.98 109.22 0)
 		(effects
 			(font
@@ -6015,7 +6005,7 @@
 		)
 		(uuid "38d2c6c4-9b44-4bb5-8e33-51dc9790a6d7")
 	)
-	(label "~{pAUTOF}"
+	(label "~{AUTOF}"
 		(at 246.38 106.68 180)
 		(effects
 			(font
@@ -6025,7 +6015,17 @@
 		)
 		(uuid "3a255a2e-5e97-405f-8ad4-69c079ca0047")
 	)
-	(label "~{pRESET}"
+	(label "ON"
+		(at 151.13 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3bca0876-c867-48ac-86bb-a89869715f66")
+	)
+	(label "~{INIT}"
 		(at 177.8 93.98 0)
 		(effects
 			(font
@@ -6055,7 +6055,7 @@
 		)
 		(uuid "483d1779-0ae4-400e-8f19-73ef7ff76698")
 	)
-	(label "pD5"
+	(label "PD5"
 		(at 246.38 78.74 180)
 		(effects
 			(font
@@ -6065,7 +6065,7 @@
 		)
 		(uuid "4937dcc1-b03a-4bd6-855c-ec46cd14a010")
 	)
-	(label "pD3"
+	(label "PD3"
 		(at 177.8 80.01 0)
 		(effects
 			(font
@@ -6095,7 +6095,7 @@
 		)
 		(uuid "5736e13b-4749-458b-b71e-9f93e7095414")
 	)
-	(label "pD7"
+	(label "PD7"
 		(at 177.8 60.96 0)
 		(effects
 			(font
@@ -6115,7 +6115,7 @@
 		)
 		(uuid "5da5ebb8-1861-40ca-a858-bd43abcb154d")
 	)
-	(label "pD2"
+	(label "PD2"
 		(at 177.8 82.55 0)
 		(effects
 			(font
@@ -6125,7 +6125,7 @@
 		)
 		(uuid "62a05476-c4fb-4532-9b0c-f03d043420e0")
 	)
-	(label "pD5"
+	(label "PD5"
 		(at 177.8 74.93 0)
 		(effects
 			(font
@@ -6135,7 +6135,7 @@
 		)
 		(uuid "698f2afc-f032-43bc-bada-d016e52d07b2")
 	)
-	(label "pD0"
+	(label "PD0"
 		(at 246.38 104.14 180)
 		(effects
 			(font
@@ -6155,7 +6155,7 @@
 		)
 		(uuid "6b73aa3b-c338-4a54-9f81-4ee29f9c884c")
 	)
-	(label "ONLINE"
+	(label "ON"
 		(at 167.64 55.88 180)
 		(effects
 			(font
@@ -6165,7 +6165,7 @@
 		)
 		(uuid "719475b3-114b-4cea-a57b-f875fa567834")
 	)
-	(label "pD1"
+	(label "PD1"
 		(at 177.8 96.52 0)
 		(effects
 			(font
@@ -6195,7 +6195,7 @@
 		)
 		(uuid "7bf199da-552c-45ee-a7b6-b37a0b08f5ea")
 	)
-	(label "pD2"
+	(label "PD2"
 		(at 246.38 93.98 180)
 		(effects
 			(font
@@ -6225,7 +6225,7 @@
 		)
 		(uuid "85ff6e33-4c53-408e-9cd2-52aa1b43188f")
 	)
-	(label "pBUSY"
+	(label "BUSY"
 		(at 177.8 58.42 0)
 		(effects
 			(font
@@ -6245,7 +6245,7 @@
 		)
 		(uuid "94bf3ea4-d8dc-4282-bf58-ae86d0d7a6cc")
 	)
-	(label "~{STROBE}"
+	(label "~{STR}"
 		(at 210.82 109.22 180)
 		(effects
 			(font
@@ -6265,7 +6265,7 @@
 		)
 		(uuid "9c65d463-fc0f-426e-9428-ee8e3d83190a")
 	)
-	(label "~{pSTROBE}"
+	(label "~{STROBE}"
 		(at 246.38 109.22 180)
 		(effects
 			(font
@@ -6295,7 +6295,7 @@
 		)
 		(uuid "b99d74f5-f6a8-425c-bd73-73d81f7ba407")
 	)
-	(label "pD6"
+	(label "PD6"
 		(at 177.8 63.5 0)
 		(effects
 			(font
@@ -6305,7 +6305,7 @@
 		)
 		(uuid "bb8f331c-50fc-45e5-ad36-499184d89b5a")
 	)
-	(label "~{pRESET}"
+	(label "~{INIT}"
 		(at 246.38 96.52 180)
 		(effects
 			(font
@@ -6355,7 +6355,7 @@
 		)
 		(uuid "cba00233-7cd7-4025-af47-5e4e56f30067")
 	)
-	(label "pD4"
+	(label "PD4"
 		(at 177.8 77.47 0)
 		(effects
 			(font
@@ -6365,7 +6365,7 @@
 		)
 		(uuid "ccf33c6a-3802-4484-b3cd-880dcc088c9c")
 	)
-	(label "pD6"
+	(label "PD6"
 		(at 246.38 73.66 180)
 		(effects
 			(font
@@ -6395,7 +6395,7 @@
 		)
 		(uuid "e4af0a35-c52c-4914-a6d1-d0211c69d0fa")
 	)
-	(label "pD1"
+	(label "PD1"
 		(at 246.38 99.06 180)
 		(effects
 			(font
@@ -6425,7 +6425,7 @@
 		)
 		(uuid "fb68b18b-1e2c-4cd1-8c01-081993d0803f")
 	)
-	(label "pD0"
+	(label "PD0"
 		(at 177.8 99.06 0)
 		(effects
 			(font
@@ -7715,6 +7715,85 @@
 		)
 	)
 	(symbol
+		(lib_id "000_LOCAL:R_Small")
+		(at 203.2 39.37 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ddd7fd3-23ed-4477-904a-b84bb1c5fe00")
+		(property "Reference" "R8"
+			(at 204.724 38.862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 204.724 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "000_LOCAL:R_0805"
+			(at 203.2 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/PYU-RC_GROUP_51_ROHS_L.pdf"
+			(at 203.2 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES 10K OHM 5% 1/8W 0805"
+			(at 203.2 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0805JR-0710KL"
+			(at 203.2 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ed9a828-c6e3-4da5-a85b-e150a398803e")
+		)
+		(pin "2"
+			(uuid "387ede48-577a-41b4-a578-0c084a975b2e")
+		)
+		(instances
+			(project "LPT_Capture_DB25_USBC_FANCY"
+				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "000_LOCAL:R_Pack04")
 		(at 172.72 99.06 270)
 		(unit 1)
@@ -8283,7 +8362,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 203.2 44.45 0)
+		(at 203.2 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8291,7 +8370,7 @@
 		(dnp no)
 		(uuid "6398512c-26f2-47cf-8ef9-99544d2a08a6")
 		(property "Reference" "#PWR05"
-			(at 203.2 50.8 0)
+			(at 203.2 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8300,7 +8379,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.454 49.276 0)
+			(at 203.454 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8309,7 +8388,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 44.45 0)
+			(at 203.2 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8318,7 +8397,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 44.45 0)
+			(at 203.2 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8327,7 +8406,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 203.2 44.45 0)
+			(at 203.2 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9639,7 +9718,7 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:R_Small")
-		(at 203.2 41.91 0)
+		(at 203.2 44.45 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9648,7 +9727,7 @@
 		(dnp no)
 		(uuid "fdb2f28c-54b4-4519-91e7-5fc17e665ae8")
 		(property "Reference" "R5"
-			(at 204.724 40.64 0)
+			(at 204.978 43.434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9657,7 +9736,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 204.724 43.18 0)
+			(at 204.724 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9666,7 +9745,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:R_0805"
-			(at 203.2 41.91 0)
+			(at 203.2 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9675,7 +9754,7 @@
 			)
 		)
 		(property "Datasheet" "datasheets/PYU-RC_GROUP_51_ROHS_L.pdf"
-			(at 203.2 41.91 0)
+			(at 203.2 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9684,7 +9763,7 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 5% 1/8W 0805"
-			(at 203.2 41.91 0)
+			(at 203.2 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9693,7 +9772,7 @@
 			)
 		)
 		(property "MPN" "RC0805JR-0710KL"
-			(at 203.2 41.91 0)
+			(at 203.2 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
