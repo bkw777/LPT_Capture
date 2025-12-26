@@ -19,10 +19,10 @@ LEDS = true;
 led_diameter = 5; // 0.1
 
 // short end inside ceiling height above pcb, 0 = auto based on usb_h and led_diameter
-rear_height = 0; //0.1
+rear_height = 3; //0.1
 
 // dip switch access
-DIPSW = true;
+DIPSW = false;
 sw_w = 12.8;
 sw_d = 13;
 sw_d2 = 6;
