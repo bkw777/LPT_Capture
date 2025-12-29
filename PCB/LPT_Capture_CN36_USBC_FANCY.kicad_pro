@@ -565,7 +565,7 @@
       "plot": "GERBER_${TITLE}_${REVISION}",
       "pos_files": "GERBER_${TITLE}_${REVISION}",
       "specctra_dsn": "",
-      "step": "../COVER/lib/${TITLE}.swjp.pcb.stl",
+      "step": "../COVER/lib/${TITLE}.notht.pcb.stl",
       "svg": "",
       "vrml": ""
     },

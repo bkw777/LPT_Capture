@@ -5508,6 +5508,12 @@
 		(uuid "0c58da68-b2b0-451d-8c93-e5fcbc7eece8")
 	)
 	(junction
+		(at 222.25 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1edff70f-2e0c-4ba5-9f32-57db8c30f627")
+	)
+	(junction
 		(at 74.93 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5674,12 +5680,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd3c929c-a530-42b9-b035-2d7fed2798d7")
-	)
-	(junction
-		(at 224.79 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e1fb4e14-cb5e-4d92-80c6-44b0fcc9ff6a")
 	)
 	(junction
 		(at 101.6 119.38)
@@ -5929,7 +5929,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 60.96) (xy 185.42 60.96)
+			(xy 180.34 60.96) (xy 184.15 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6089,7 +6089,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 109.22) (xy 229.87 118.11)
+			(xy 232.41 109.22) (xy 232.41 118.11)
 		)
 		(stroke
 			(width 0)
@@ -6129,7 +6129,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 96.52) (xy 129.54 124.46)
+			(xy 130.81 96.52) (xy 130.81 124.46)
 		)
 		(stroke
 			(width 0)
@@ -6139,7 +6139,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 68.58) (xy 185.42 60.96)
+			(xy 184.15 68.58) (xy 184.15 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6319,16 +6319,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 68.58) (xy 241.3 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52ec0348-c10e-4873-96c6-79bc3a5c87e4")
-	)
-	(wire
-		(pts
 			(xy 227.33 86.36) (xy 241.3 86.36)
 		)
 		(stroke
@@ -6409,7 +6399,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 60.96) (xy 224.79 68.58)
+			(xy 222.25 60.96) (xy 222.25 68.58)
 		)
 		(stroke
 			(width 0)
@@ -6496,6 +6486,16 @@
 			(type default)
 		)
 		(uuid "64fb5e8c-6c77-4b06-87a5-50c9cb7f510a")
+	)
+	(wire
+		(pts
+			(xy 222.25 68.58) (xy 241.3 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66324303-dd8e-4a4c-b9b1-793c7011fdab")
 	)
 	(polyline
 		(pts
@@ -6689,7 +6689,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 118.11) (xy 248.92 118.11)
+			(xy 232.41 118.11) (xy 248.92 118.11)
 		)
 		(stroke
 			(width 0)
@@ -6909,7 +6909,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 60.96) (xy 224.79 60.96)
+			(xy 189.23 60.96) (xy 222.25 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6919,7 +6919,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 96.52) (xy 198.12 96.52)
+			(xy 130.81 96.52) (xy 198.12 96.52)
 		)
 		(stroke
 			(width 0)
@@ -7149,7 +7149,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 124.46) (xy 76.2 124.46)
+			(xy 130.81 124.46) (xy 76.2 124.46)
 		)
 		(stroke
 			(width 0)
@@ -7329,7 +7329,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 68.58) (xy 185.42 68.58)
+			(xy 198.12 68.58) (xy 184.15 68.58)
 		)
 		(stroke
 			(width 0)
@@ -7389,7 +7389,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 109.22) (xy 241.3 109.22)
+			(xy 232.41 109.22) (xy 241.3 109.22)
 		)
 		(stroke
 			(width 0)
@@ -7459,7 +7459,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 68.58) (xy 224.79 68.58)
+			(xy 208.28 68.58) (xy 222.25 68.58)
 		)
 		(stroke
 			(width 0)
@@ -9978,7 +9978,7 @@
 				)
 			)
 		)
-		(property "Footprint" "000_LOCAL:SW_DIP_SPSTx04_Piano_Jumper_dual"
+		(property "Footprint" "000_LOCAL:SW_DIP_SPST_Jumper_Dual_x04"
 			(at 187.96 111.76 0)
 			(effects
 				(font
@@ -10815,7 +10815,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "000_LOCAL:Housing_CN36_shell_snap"
+		(property "Footprint" "000_LOCAL:Housing_CN36"
 			(at 153.67 151.13 0)
 			(effects
 				(font

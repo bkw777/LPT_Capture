@@ -708,13 +708,13 @@
 	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/5552742-1.step"
 		(hide yes)
 		(offset
-			(xyz 0 -11.3 8.12)
+			(xyz 0 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 -0 -0)
+			(xyz -0 -0 -180)
 		)
 	)
 )

@@ -74,31 +74,34 @@ module screw_post(h=10,od=6,id=0,fr=2,o=0,ch=0) {
 }
 
 module rounded_cube(w=60,d=40,h=20,rh=2,rv=1,t=0) {
-  _w=t+w+t;
-  _d=t+d+t;
-  _h=t+h+t;
-  if (rh==0&&rv==0) {
-    // plain cube
-    if(t) difference() {
-      cube([_w,_d,_h],center=true);
-      cube([w,d,h],center=true);
+  // skip if any w,d,h == 0
+  if (w && d && h) {
+    _w=t+w+t;
+    _d=t+d+t;
+    _h=t+h+t;
+    if (rh==0&&rv==0) {
+      // plain cube
+      if(t) difference() {
+        cube([_w,_d,_h],center=true);
+        cube([w,d,h],center=true);
+      }
+      else cube([w,d,h],center=true);
     }
-    else cube([w,d,h],center=true);
-  }
-  else if (rv==0) {
-    // rounded plate
-    if(t) difference() {
-      _hbrp(w=_w,d=_d,h=_h,r=rh+t);
-      _hbrp(w=w,d=d,h=h,r=rh);
+    else if (rv==0) {
+      // rounded plate
+      if(t) difference() {
+        _hbrp(w=_w,d=_d,h=_h,r=rh+t);
+        _hbrp(w=w,d=d,h=h,r=rh);
+      }
+      else _hbrp(w=w,d=d,h=h,r=rh);
+    } else {
+      // rounded cube
+      if(t) difference() {
+        _hbrc(w=_w,d=_d,h=_h,rh=rh+t,rv=rv+t);
+        _hbrc(w=w,d=d,h=h,rh=rh,rv=rv);
+      }
+    else _hbrc(w=w,d=d,h=h,rh=rh,rv=rv);
     }
-    else _hbrp(w=w,d=d,h=h,r=rh);
-  } else {
-    // rounded cube
-    if(t) difference() {
-      _hbrc(w=_w,d=_d,h=_h,rh=rh+t,rv=rv+t);
-      _hbrc(w=w,d=d,h=h,rh=rh,rv=rv);
-    }
-  else _hbrc(w=w,d=d,h=h,rh=rh,rv=rv);
   }
 }
 
