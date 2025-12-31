@@ -8,3 +8,8 @@ However, since we started selling the v3 production model, we have found some eq
 The v4 Retro-Printer module includes changes to allow for more combinations of hardware and overcome the GND issue.  It has jumpers to enable or disable the 5V on pins 13, 18 and pin 32.
 ..."
 
+
+https://ia800203.us.archive.org/5/items/f15_Parallel_Port_Complete/
+https://ia800203.us.archive.org/5/items/f15_Parallel_Port_Complete/Parallel_Port_Complete_raw.zip
+https://ia800203.us.archive.org/5/items/f15_Parallel_Port_Complete/Parallel_Port_Complete_Included_Disk.zip
+https://ia800203.us.archive.org/5/items/f15_Parallel_Port_Complete/Parallel_Port_Complete_images_processed.pdf
