@@ -1,3 +1,7 @@
+**NOTE: Only the top/default DB25_MicroUSB_BASIC version is tested and known good.**  
+**All other versions are untested guesswork.**  
+**I have built one DB25_USBC_Fancy and only barely tested just with power only, and the LEDs are too dim.**
+
 # LPT Capture
 Capture the output from a parallel printer port.
 
