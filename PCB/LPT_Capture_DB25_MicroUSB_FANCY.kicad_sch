@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "LPT_Capture_DB25_MicroUSB_FANCY")
-		(date "2025-12-25")
-		(rev "008")
+		(date "2026-03-25")
+		(rev "009")
 		(company "b.kenyon.w@gmail.com")
 		(comment 1 "CC-BY-SA")
 		(comment 2 "github.com/bkw777/LPT_Capture")
@@ -4346,6 +4346,12 @@
 		(uuid "ffde0a2b-bc12-4002-bdd6-2f3c1a919725")
 	)
 	(junction
+		(at 177.8 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08e7bd6e-1762-4a5a-91f8-f45deab15290")
+	)
+	(junction
 		(at 129.54 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4394,12 +4400,6 @@
 		(uuid "4867c77f-726f-4ee5-ac87-81e5ea166238")
 	)
 	(junction
-		(at 165.1 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "582c2050-f384-4eb7-ab1a-57b765b0f4a8")
-	)
-	(junction
 		(at 209.55 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4415,7 +4415,7 @@
 		(at 203.2 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7866e4fe-6417-43f4-934e-59942e3a9ea5")
+		(uuid "7ee0514e-ba17-4297-b097-4e0a1d09481a")
 	)
 	(junction
 		(at 45.72 101.6)
@@ -4442,16 +4442,16 @@
 		(uuid "82e9c6c1-3ac0-4bc8-a747-f8af2cbd8714")
 	)
 	(junction
-		(at 177.8 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "83d1e949-63bc-43cf-b5ef-73da7b61dc0f")
-	)
-	(junction
 		(at 57.15 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87a8baa5-cff8-4313-aab8-bb8ad42b5905")
+	)
+	(junction
+		(at 168.91 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f45e039-292a-45d3-bb65-c4854473b098")
 	)
 	(junction
 		(at 209.55 68.58)
@@ -4478,7 +4478,7 @@
 		(uuid "add3d11b-1d70-40b1-a4cf-06eb26935d76")
 	)
 	(junction
-		(at 64.77 116.84)
+		(at 63.5 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b73db816-32f7-4ed2-9543-0396b439cabf")
@@ -4551,6 +4551,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 58.42) (xy 161.29 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "018110f6-4685-45c3-8c9e-347d6005ae03")
+	)
+	(wire
+		(pts
 			(xy 133.35 71.12) (xy 142.24 71.12)
 		)
 		(stroke
@@ -4591,16 +4601,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 41.91) (xy 129.54 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14f1d0ee-6669-4673-bb3d-c00cd51df1e1")
-	)
-	(wire
-		(pts
 			(xy 45.72 88.9) (xy 72.39 88.9)
 		)
 		(stroke
@@ -4621,7 +4621,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 116.84) (xy 72.39 116.84)
+			(xy 63.5 116.84) (xy 72.39 116.84)
 		)
 		(stroke
 			(width 0)
@@ -4641,7 +4641,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 139.7) (xy 137.16 139.7)
+			(xy 63.5 139.7) (xy 137.16 139.7)
 		)
 		(stroke
 			(width 0)
@@ -4661,23 +4661,23 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 49.53) (xy 165.1 52.07)
+			(xy 152.4 68.58) (xy 161.29 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2bb00705-ea65-47c3-94ba-299f2e893c9f")
+		(uuid "2e91709a-368e-4414-a44e-e28f3f3962c1")
 	)
 	(wire
 		(pts
-			(xy 177.8 41.91) (xy 165.1 41.91)
+			(xy 168.91 68.58) (xy 203.2 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2c38995d-faa8-4623-a3a1-f51d2ae3e115")
+		(uuid "3a7f8428-4dd3-433e-99bb-49c1adc9c1de")
 	)
 	(wire
 		(pts
@@ -4731,7 +4731,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 116.84) (xy 64.77 139.7)
+			(xy 63.5 116.84) (xy 63.5 139.7)
 		)
 		(stroke
 			(width 0)
@@ -4768,6 +4768,16 @@
 			(type default)
 		)
 		(uuid "535a49fa-e112-4c09-a214-5988daf5145e")
+	)
+	(wire
+		(pts
+			(xy 203.2 68.58) (xy 203.2 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "562378ee-6838-4121-b085-7ddd3b0f9f02")
 	)
 	(wire
 		(pts
@@ -4851,6 +4861,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 58.42) (xy 177.8 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cb16ed3-e067-421f-a983-81c3301cc4e4")
+	)
+	(wire
+		(pts
 			(xy 87.63 132.08) (xy 90.17 132.08)
 		)
 		(stroke
@@ -4878,16 +4898,6 @@
 			(type default)
 		)
 		(uuid "6e001b24-f25d-4e99-82e5-d052f9ba0edf")
-	)
-	(wire
-		(pts
-			(xy 129.54 41.91) (xy 165.1 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7208c97f-5dee-420b-9c35-7e3ef53be837")
 	)
 	(wire
 		(pts
@@ -5061,7 +5071,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 115.57) (xy 64.77 116.84)
+			(xy 63.5 115.57) (xy 63.5 116.84)
 		)
 		(stroke
 			(width 0)
@@ -5101,7 +5111,27 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 54.61) (xy 190.5 54.61)
+			(xy 168.91 58.42) (xy 171.45 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b18da4d9-d295-4999-abca-6acefefea7d8")
+	)
+	(wire
+		(pts
+			(xy 168.91 68.58) (xy 168.91 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b262d916-b022-4c9a-adf3-346c47ad0e7f")
+	)
+	(wire
+		(pts
+			(xy 177.8 58.42) (xy 190.5 58.42)
 		)
 		(stroke
 			(width 0)
@@ -5118,6 +5148,16 @@
 			(type default)
 		)
 		(uuid "b2d0c824-418f-4459-88d2-f1b3fafebf0c")
+	)
+	(wire
+		(pts
+			(xy 129.54 58.42) (xy 129.54 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4615627-afb7-4401-b1bd-69b357a008ce")
 	)
 	(wire
 		(pts
@@ -5151,7 +5191,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 104.14) (xy 190.5 54.61)
+			(xy 190.5 104.14) (xy 190.5 58.42)
 		)
 		(stroke
 			(width 0)
@@ -5188,16 +5228,6 @@
 			(type default)
 		)
 		(uuid "d55f5748-2728-4616-8e6d-72bdd31ab4cf")
-	)
-	(wire
-		(pts
-			(xy 152.4 68.58) (xy 203.2 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d878db92-5f17-4712-b7d5-98ed8254ff49")
 	)
 	(wire
 		(pts
@@ -5308,16 +5338,6 @@
 			(type default)
 		)
 		(uuid "f8eca6ad-122f-4acb-988a-e43c2b8bc09c")
-	)
-	(wire
-		(pts
-			(xy 203.2 68.58) (xy 203.2 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "faefdcec-b7ff-4c35-8e53-a4aca1b28534")
 	)
 	(label "PD7"
 		(at 220.98 81.28 180)
@@ -5430,7 +5450,7 @@
 		(uuid "201021af-960c-4a1b-8b15-8b240b322483")
 	)
 	(label "ONLINE"
-		(at 152.4 68.58 0)
+		(at 168.91 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5768,6 +5788,16 @@
 			(justify right bottom)
 		)
 		(uuid "9c6a023d-dd99-4183-930f-5e8c4ee3e557")
+	)
+	(label "~{SELIN}"
+		(at 190.5 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b1f20b89-d909-4744-9555-0b9f4d0273e8")
 	)
 	(label "D4"
 		(at 102.87 93.98 0)
@@ -6849,7 +6879,7 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:R_Small")
-		(at 64.77 113.03 0)
+		(at 63.5 113.03 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6858,7 +6888,7 @@
 		(dnp no)
 		(uuid "04c01209-cae7-4395-9ac3-9e0042328dd4")
 		(property "Reference" "R2"
-			(at 61.468 114.3 0)
+			(at 60.198 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6866,7 +6896,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 60.96 111.76 0)
+			(at 59.69 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6874,7 +6904,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:R_0805"
-			(at 64.77 113.03 0)
+			(at 63.5 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6883,7 +6913,7 @@
 			)
 		)
 		(property "Datasheet" "datasheets/PYU-RC_GROUP_51_ROHS_L.pdf"
-			(at 64.77 113.03 0)
+			(at 63.5 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6892,7 +6922,7 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 5% 1/8W 0805"
-			(at 64.77 113.03 0)
+			(at 63.5 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6901,7 +6931,7 @@
 			)
 		)
 		(property "MPN" "RC0805JR-0710KL"
-			(at 64.77 113.03 0)
+			(at 63.5 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7005,7 +7035,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 64.77 110.49 0)
+		(at 63.5 110.49 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7014,7 +7044,7 @@
 		(dnp no)
 		(uuid "26ddab59-5879-42d7-ac83-540c03b5f7d9")
 		(property "Reference" "#PWR012"
-			(at 64.77 114.3 0)
+			(at 63.5 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7023,7 +7053,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 65.024 106.68 0)
+			(at 63.754 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7031,7 +7061,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 110.49 0)
+			(at 63.5 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7040,7 +7070,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 110.49 0)
+			(at 63.5 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7049,7 +7079,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 64.77 110.49 0)
+			(at 63.5 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7230,8 +7260,8 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:R_Small")
-		(at 177.8 52.07 0)
-		(mirror y)
+		(at 173.99 58.42 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7239,25 +7269,23 @@
 		(dnp no)
 		(uuid "2ec6041a-9b5b-446d-8af7-057831860103")
 		(property "Reference" "R6"
-			(at 179.324 51.308 0)
+			(at 173.99 54.102 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "10k"
-			(at 179.324 53.34 0)
+			(at 173.99 56.134 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "000_LOCAL:R_0805"
-			(at 177.8 52.07 0)
+			(at 173.99 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7266,7 +7294,7 @@
 			)
 		)
 		(property "Datasheet" "datasheets/PYU-RC_GROUP_51_ROHS_L.pdf"
-			(at 177.8 52.07 0)
+			(at 173.99 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7275,7 +7303,7 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 5% 1/8W 0805"
-			(at 177.8 52.07 0)
+			(at 173.99 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7284,7 +7312,7 @@
 			)
 		)
 		(property "MPN" "RC0805JR-0710KL"
-			(at 177.8 52.07 0)
+			(at 173.99 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7535,7 +7563,7 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:R_Small")
-		(at 165.1 54.61 0)
+		(at 168.91 74.93 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7544,7 +7572,7 @@
 		(dnp no)
 		(uuid "526950ea-4dd0-48c4-9370-d1bad99a5e18")
 		(property "Reference" "R4"
-			(at 168.402 53.34 0)
+			(at 172.212 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7552,7 +7580,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 168.91 55.88 0)
+			(at 172.72 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7560,7 +7588,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:R_0805"
-			(at 165.1 54.61 0)
+			(at 168.91 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7569,7 +7597,7 @@
 			)
 		)
 		(property "Datasheet" "datasheets/PYU-RC_GROUP_51_ROHS_L.pdf"
-			(at 165.1 54.61 0)
+			(at 168.91 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7578,7 +7606,7 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 5% 1/8W 0805"
-			(at 165.1 54.61 0)
+			(at 168.91 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7587,7 +7615,7 @@
 			)
 		)
 		(property "MPN" "RC0805JR-0710KL"
-			(at 165.1 54.61 0)
+			(at 168.91 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7744,7 +7772,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 177.8 59.69 0)
+		(at 177.8 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7752,7 +7780,7 @@
 		(dnp no)
 		(uuid "6398512c-26f2-47cf-8ef9-99544d2a08a6")
 		(property "Reference" "#PWR05"
-			(at 177.8 66.04 0)
+			(at 177.8 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7761,7 +7789,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 178.054 64.516 0)
+			(at 178.054 68.326 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7770,7 +7798,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 59.69 0)
+			(at 177.8 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7779,7 +7807,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 59.69 0)
+			(at 177.8 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7788,7 +7816,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 177.8 59.69 0)
+			(at 177.8 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7892,34 +7920,31 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:LED")
-		(at 177.8 45.72 90)
+		(at 165.1 58.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "722c793e-ce4f-4512-90c2-6a2d182cb88b")
 		(property "Reference" "LED2"
-			(at 181.61 46.0374 90)
+			(at 165.1 52.832 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "SELECT"
-			(at 181.61 48.5774 90)
+			(at 165.1 54.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "000_LOCAL:LED_0805"
-			(at 177.8 45.72 0)
+			(at 165.1 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7928,7 +7953,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 45.72 0)
+			(at 165.1 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7937,7 +7962,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 177.8 45.72 0)
+			(at 165.1 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7946,7 +7971,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 177.8 45.72 0)
+			(at 165.1 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7955,7 +7980,7 @@
 			)
 		)
 		(property "MPN" "LS R976-NR-1-0-20-R18"
-			(at 177.8 45.72 90)
+			(at 165.1 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8110,7 +8135,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 165.1 57.15 0)
+		(at 168.91 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8118,7 +8143,7 @@
 		(dnp no)
 		(uuid "91b17820-cfed-4f91-897a-c8be3e18e5f3")
 		(property "Reference" "#PWR04"
-			(at 165.1 63.5 0)
+			(at 168.91 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8127,7 +8152,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.354 61.976 0)
+			(at 169.164 82.296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8136,7 +8161,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 57.15 0)
+			(at 168.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8145,7 +8170,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 57.15 0)
+			(at 168.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8154,7 +8179,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 165.1 57.15 0)
+			(at 168.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8577,34 +8602,31 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:LED")
-		(at 165.1 45.72 90)
+		(at 165.1 68.58 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e0bf422d-5507-4a98-b3f2-77e9fb94707f")
 		(property "Reference" "LED1"
-			(at 168.91 46.0374 90)
+			(at 165.1 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "ONLINE"
-			(at 168.91 48.5774 90)
+			(at 165.1 65.024 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "000_LOCAL:LED_0805"
-			(at 165.1 45.72 0)
+			(at 165.1 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8613,7 +8635,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 45.72 0)
+			(at 165.1 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8622,7 +8644,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 165.1 45.72 0)
+			(at 165.1 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8631,7 +8653,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 165.1 45.72 0)
+			(at 165.1 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8640,7 +8662,7 @@
 			)
 		)
 		(property "MPN" "LS R976-NR-1-0-20-R18"
-			(at 165.1 45.72 90)
+			(at 165.1 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8970,7 +8992,7 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:R_Small")
-		(at 177.8 57.15 0)
+		(at 177.8 60.96 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8979,7 +9001,7 @@
 		(dnp no)
 		(uuid "fdb2f28c-54b4-4519-91e7-5fc17e665ae8")
 		(property "Reference" "R5"
-			(at 179.324 56.388 0)
+			(at 179.324 60.198 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8988,7 +9010,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 179.324 58.42 0)
+			(at 179.324 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8997,7 +9019,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:R_0805"
-			(at 177.8 57.15 0)
+			(at 177.8 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9006,7 +9028,7 @@
 			)
 		)
 		(property "Datasheet" "datasheets/PYU-RC_GROUP_51_ROHS_L.pdf"
-			(at 177.8 57.15 0)
+			(at 177.8 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9015,7 +9037,7 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 5% 1/8W 0805"
-			(at 177.8 57.15 0)
+			(at 177.8 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9024,7 +9046,7 @@
 			)
 		)
 		(property "MPN" "RC0805JR-0710KL"
-			(at 177.8 57.15 0)
+			(at 177.8 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
