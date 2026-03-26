@@ -199,7 +199,7 @@ assert (wall_thickness>minimum_wall_thickness-0.1);  // >= test doesn't work?
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
-include <lib/handy.scad>;
+use <lib/handy.scad>;
 
 module bisect (x=0) {
   w = pcb_w/2+fc+wall_thickness+1;
