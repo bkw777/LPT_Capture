@@ -186,6 +186,14 @@ gap =
   1;
 base_thickness = gap + wall_thickness;
 
+// reset button boss
+rb_x = 1.2;
+rb_y = 11.65;
+rb_z = 4.4;
+rb_w = 3.2;
+rb_d = 4.5;
+rb_h = cn_h;
+
 // arc smoothness
 //$fn = 32;
 $fa = 6;
@@ -365,7 +373,6 @@ module shell () {
         union() {
           hull() {
             // add outside front
-            
             translate([0,pcb_d/2-cn_vd/2,ofh/2-base_thickness]) rounded_cube(w=pcb_w+r*2,d=cn_vd,h=ofh,rh=r,rv=r,t=0);
             // add outside rear
             translate([0,-pcb_d/2+pcb_r,orh/2-base_thickness]) rounded_cube(w=pcb_w+r*2,d=R*2,h=orh,rh=R,rv=r,t=0);
@@ -417,6 +424,7 @@ module shell () {
           }
         }
       }
+
       // replace part of lip cut away by usb
       translate([-pcb_w/2,usb_y-usb_W/2,-gap-fc]) cube([lip,usb_W,gap]);
       // add screw posts
@@ -456,8 +464,17 @@ module shell () {
         t = base_thickness+pcb_thickness;
         translate([0,pcb_d/2+x+fc,t/2-base_thickness]) rotate([90,0,0]) rounded_cube(w=sw,d=t,h=wall_thickness,rh=base_thickness/2,rv=wall_thickness/2);
       }
+      // add reset button boss
+      difference() {
+        // add boss
+        translate([rb_x,-rb_y,rb_h/2+rb_z]) rounded_cube(w=rb_w,d=rb_d,h=rb_h,rv=0.5,rh=0.5);
+        // cut top
+        hull() {
+          translate([rb_x,-1-pcb_d/2-fc-wall_thickness,rb_h+orh-base_thickness-r]) cube([rb_w*2,2,rb_h*2],center=true);
+          translate([rb_x,-1+pcb_d/2-cn_vd+r,rb_h+ofh-base_thickness-r/2]) cube([rb_w*2,2,rb_h*2],center=true);
+        }
+      }
     }
-
     // cut screw holes
     translate([0,0,-fc]) screw_holes();
   }
