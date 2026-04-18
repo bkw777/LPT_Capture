@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "LPT_Capture_DB25_USBC_FANCY")
-		(date "2026-03-25")
-		(rev "002")
+		(date "2026-04-17")
+		(rev "003")
 		(company "b.kenyon.w@gmail.com")
 		(comment 1 "CC-BY-SA")
 		(comment 2 "github.com/bkw777/LPT_Capture")
@@ -3357,6 +3357,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "000_LOCAL:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "000_LOCAL:USBC_16pin"
 			(pin_names
 				(offset 1.016)
@@ -4524,6 +4674,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1c2cac9c-d2dd-418a-b4d8-4c1a17f517c6")
+	)
+	(junction
+		(at 85.09 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d19b1b6-afdf-4b35-bc3c-7476a540c416")
 	)
 	(junction
 		(at 234.95 86.36)
@@ -6604,7 +6760,7 @@
 			(uuid "813f6025-a864-414c-920e-d5983b77b283")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "U1")
 					(unit 1)
@@ -6749,7 +6905,7 @@
 			(uuid "b2019c99-bbc5-450d-84d1-c98e6855b5ef")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "J2")
 					(unit 1)
@@ -6843,7 +6999,7 @@
 			(uuid "4d92ed98-d3ef-458d-87ff-a665e26c534c")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "RA1")
 					(unit 1)
@@ -6908,7 +7064,7 @@
 			(uuid "0ce24515-0925-48de-b7d3-cc6493337464")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR0109")
 					(unit 1)
@@ -6984,7 +7140,7 @@
 			(uuid "a7233aae-b60d-4760-8820-66fe1c951484")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "FB1")
 					(unit 1)
@@ -7060,7 +7216,7 @@
 			(uuid "f9391c40-3a7f-4427-8f2b-74c1faf2075f")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "C4")
 					(unit 1)
@@ -7136,7 +7292,7 @@
 			(uuid "091c83ac-f4e8-4579-8da1-aa3ac89ae6a0")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "C2")
 					(unit 1)
@@ -7214,7 +7370,7 @@
 			(uuid "0f44ccff-6989-46be-bd1e-61906d4e8355")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "C3")
 					(unit 1)
@@ -7279,7 +7435,7 @@
 			(uuid "52824204-a121-479a-bc87-8ea6fb304f73")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR0121")
 					(unit 1)
@@ -7356,7 +7512,7 @@
 			(uuid "a72fdfaa-aff5-445d-82fd-87ded3466a74")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "R2")
 					(unit 1)
@@ -7435,7 +7591,7 @@
 			(uuid "dfb1a51d-838f-4afe-942f-940d6abf24a3")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "R3")
 					(unit 1)
@@ -7501,7 +7657,7 @@
 			(uuid "249b95e7-8470-480c-85d6-d70a59d2a14a")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR012")
 					(unit 1)
@@ -7584,7 +7740,7 @@
 			(uuid "911e1bdd-c453-4f41-a859-b20bc60a635a")
 		)
 		(instances
-			(project ""
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "Q1")
 					(unit 1)
@@ -7660,7 +7816,7 @@
 			(uuid "f6d2cba3-fe7d-4971-92ac-653b72fcde2a")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "C1")
 					(unit 1)
@@ -7726,9 +7882,86 @@
 			(uuid "f282ea6a-5fb7-4e6f-b00c-8932be6b58af")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "000_LOCAL:SW_Push")
+		(at 80.01 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b3fafdf-bfa9-4447-9cfd-cd9acb801d83")
+		(property "Reference" "SW1"
+			(at 80.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RESET"
+			(at 80.01 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "000_LOCAL:SW_SPST_PTS810"
+			(at 80.01 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/ck_rk_datasheet.pdf"
+			(at 80.01 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 80.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RKB2SJM250SMTR LFS"
+			(at 80.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7d50af7e-5440-4f68-90c3-bf319b9adc4c")
+		)
+		(pin "1"
+			(uuid "74d923c6-b0ea-4f42-829e-e8b6204f1a14")
+		)
+		(instances
+			(project "LPT_Capture_DB25_USBC_FANCY"
+				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -7897,7 +8130,7 @@
 			(uuid "0dc20ae6-fc56-496f-9c16-c4917e4757ea")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "RA3")
 					(unit 1)
@@ -7963,7 +8196,7 @@
 			(uuid "3e1cfa8c-cf82-4746-883a-bc5c20af084f")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#FLG04")
 					(unit 1)
@@ -8040,7 +8273,7 @@
 			(uuid "94159a1f-4140-4368-940a-d8724dfdb146")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "R4")
 					(unit 1)
@@ -8106,7 +8339,7 @@
 			(uuid "313f66d1-7d9a-4377-ae98-73b1cdd5c62e")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR02")
 					(unit 1)
@@ -8172,7 +8405,7 @@
 			(uuid "6b731730-020a-430f-a042-b65c4ebe2b87")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR015")
 					(unit 1)
@@ -8238,7 +8471,7 @@
 			(uuid "d8b05356-9e08-4c43-ba95-827b7ad318b5")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#FLG02")
 					(unit 1)
@@ -8304,7 +8537,7 @@
 			(uuid "78d40972-7781-40bc-9d41-a33d85a38f26")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR013")
 					(unit 1)
@@ -8370,7 +8603,7 @@
 			(uuid "49e7bb80-5b42-4a70-ab3d-ed7dac4ac178")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR06")
 					(unit 1)
@@ -8436,7 +8669,7 @@
 			(uuid "c84206f7-1e4c-434c-95f2-38e4be18f4b5")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR05")
 					(unit 1)
@@ -8518,7 +8751,7 @@
 			(uuid "b4967a02-1f5e-4b1b-a2ca-52fd3db73f55")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "Q2")
 					(unit 1)
@@ -8603,7 +8836,7 @@
 			(uuid "da13bb6a-e620-4a42-b8ca-92c238d2ce16")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "LED2")
 					(unit 1)
@@ -8679,7 +8912,7 @@
 			(uuid "6a5621f4-6c4e-4ce5-992c-6ccef74acbe0")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "R7")
 					(unit 1)
@@ -8744,7 +8977,7 @@
 			(uuid "055c7a12-d959-447a-b732-d512656b58c9")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR0122")
 					(unit 1)
@@ -8809,7 +9042,7 @@
 			(uuid "c2fb2c57-bd7e-4079-a035-4e22acaa1a87")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR014")
 					(unit 1)
@@ -8875,7 +9108,7 @@
 			(uuid "d857a029-fea3-4133-b37c-9b7af8ca78b6")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR04")
 					(unit 1)
@@ -8940,7 +9173,7 @@
 			(uuid "74df41cb-b23f-47fc-87e1-be740bb1610b")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR03")
 					(unit 1)
@@ -9005,7 +9238,7 @@
 			(uuid "536132d7-cde2-436a-b60d-22bf258b6413")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR01")
 					(unit 1)
@@ -9071,7 +9304,7 @@
 			(uuid "d2c5d90b-fa8d-46f4-ab13-b45035b8e1e5")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR07")
 					(unit 1)
@@ -9137,7 +9370,7 @@
 			(uuid "7ba0d796-86aa-4bf1-a69f-0621f529cd0d")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#PWR08")
 					(unit 1)
@@ -9210,7 +9443,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "N1")
 					(unit 1)
@@ -9295,9 +9528,75 @@
 			(uuid "d8ad34ac-621c-4563-8e02-4a32b32323a2")
 		)
 		(instances
-			(project ""
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "LED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 74.93 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e47b9343-1ff2-4dc9-b7dc-58c6f7446886")
+		(property "Reference" "#PWR010"
+			(at 74.93 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 75.184 131.826 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42ecede5-24d8-4645-bac5-4b7eeb362b7e")
+		)
+		(instances
+			(project "LPT_Capture_DB25_USBC_FANCY"
+				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -9389,7 +9688,7 @@
 			(uuid "7b915316-6cc8-465a-a91e-10f19f0c4d8d")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "RA2")
 					(unit 1)
@@ -9468,7 +9767,7 @@
 			(uuid "b460a769-8740-4ed8-8e1c-cf1086d7e621")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "R1")
 					(unit 1)
@@ -9534,7 +9833,7 @@
 			(uuid "29c66e45-6ab3-48ee-ba7f-c693480285a3")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "#FLG03")
 					(unit 1)
@@ -9643,7 +9942,7 @@
 			(uuid "41895d72-c0ba-4d54-a11e-b11825cca109")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "J1")
 					(unit 1)
@@ -9720,7 +10019,7 @@
 			(uuid "f27f348b-8929-41b2-ba0a-d2276f544b2f")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "R6")
 					(unit 1)
@@ -9799,7 +10098,7 @@
 			(uuid "d9680596-b084-4d72-aba5-22a509da984f")
 		)
 		(instances
-			(project "LPT_Capture"
+			(project "LPT_Capture_DB25_USBC_FANCY"
 				(path "/688d8faa-d7c3-41d3-96f9-1bbd0c4002a8"
 					(reference "R5")
 					(unit 1)
